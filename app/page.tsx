@@ -18,6 +18,10 @@ import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/marquee";
 import BlurFade from "@/components/ui/blur-fade";
 import HyperText from "@/components/ui/hyper-text";
+import SparklesText from "@/components/ui/sparkles-text";
+import AnimatedShinyText from "@/components/ui/animated-shiny-text";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { ProjectShowcase } from "@/components/custom/showcase";
 
 // MAP CIRCLES
 const slugs = [
@@ -131,14 +135,7 @@ const ReviewCard = ({
   );
 };
 
-// PROJECTS
-const images = Array.from({ length: 9 }, (_, i) => {
-  const isLandscape = i % 2 === 0;
-  const width = isLandscape ? 800 : 600;
-  const height = isLandscape ? 600 : 800;
-  return `https://picsum.photos/seed/${i + 1}/${width}/${height}`;
-});
-
+// MAIN FUNCTION
 export default function Home() {
   const { theme } = useTheme();
   const [color, setColor] = useState("#000000");
@@ -389,18 +386,24 @@ export default function Home() {
       </div>
 
       {/* PROJECT SECTION */}
-      <section id="photos">
-        <div className="columns-2 gap-4 sm:columns-3">
-          {images.map((imageUrl, idx) => (
-            <BlurFade key={imageUrl} delay={0.25 + idx * 0.05} inView>
-              <img
-                className="mb-4 size-full rounded-lg object-contain"
-                src={imageUrl}
-                alt={`Random stock image ${idx + 1}`}
-              />
-            </BlurFade>
-          ))}
+      <section id="photos" className="py-14 w-[80%] mx-auto">
+        <div className="text-center">
+          <SparklesText text="Project Showcase" />
         </div>
+        <div className="z-10 flex items-center justify-center my-6 mb-16">
+          <div
+            className={cn(
+              "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+            )}
+          >
+            <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+              <span>✨ Make one with your ideas</span>
+              <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+            </AnimatedShinyText>
+          </div>
+        </div>
+
+        <ProjectShowcase></ProjectShowcase>
       </section>
     </>
   );
