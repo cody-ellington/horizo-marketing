@@ -309,14 +309,14 @@ export default function Home() {
           <div className="w-full">
             <div className="bg-white text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
               <Image
-                src={"/images/web.png"}
+                src={"/images/ecom.png"}
                 alt="Logo"
                 width={1000}
                 height={1000}
                 className="w-full"
               />
               <div className="p-4 space-y-2">
-                <h3 className="text-xl font-semibold">Website Development</h3>
+                <h3 className="text-xl font-semibold">E-Commerce Website</h3>
                 <p className="text-gray-500 dark:text-gray-400">
                   Take your business to the next level with our web design and
                   development services
@@ -332,8 +332,30 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative flex h-full size-full max-w-lg items-center justify-center overflow-hidden rounded-lg bg-background px-20 py-32">
-            <IconCloud iconSlugs={slugs} />
+          <div className="w-full">
+            <div className="bg-white text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
+              <Image
+                src={"/images/web.png"}
+                alt="Logo"
+                width={1000}
+                height={1000}
+                className="w-full"
+              />
+              <div className="p-4 space-y-2">
+                <h3 className="text-xl font-semibold">Branding Website</h3>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Take your business to the next level with our web design and
+                  development services
+                </p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  non neque pellentesque, sodales quam vitae, consequat lectus.
+                  Aliquam vel facilisis dui. Etiam vel ornare neque, eget
+                  imperdiet sapien
+                </p>
+                <Button>Contact Us</Button>
+              </div>
+            </div>
           </div>
 
           <div className="w-full">
