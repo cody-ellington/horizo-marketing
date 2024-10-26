@@ -276,10 +276,10 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
-        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-2xl md:text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
           EMBRACE YOUR ONLINE PRESENSE
         </span>
-        <span className="text-center dark:text-white/70 w-[40%] mt-3">
+        <span className="text-center dark:text-white/70 w-[80%] md:w-[40%] mt-3">
           This is a subtitle, Lorem ipsum dolor, sit amet consectetur
           adipisicing elit. Voluptates est vel ex totam consequuntur odit porro
           atque dolor accusantium quod temporibus dignissimos
@@ -321,19 +321,19 @@ export default function Home() {
         }
       >
         <MagicCard
-          className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl w-[30%]"
+          className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl md:w-[30%]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
           INTEGRITY
         </MagicCard>
         <MagicCard
-          className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl w-[40%]"
+          className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl md:w-[40%]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
           RESPONSIBILITY
         </MagicCard>
         <MagicCard
-          className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl w-[30%]"
+          className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl md:w-[30%]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
           WORTH
@@ -499,8 +499,8 @@ export default function Home() {
       </section>
 
       {/* OPERATION SECTION */}
-      <div className="flex gap-5 w-[80%] mx-auto">
-        <div className="w-[40%]">
+      <div className="md:flex gap-5 w-[80%] mx-auto">
+        <div className="md:w-[40%] mb-10 md:mb-0">
           <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
               <p className="text-[3.5rem] font-semibold">
@@ -542,7 +542,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-[60%]">
+        <div className="md:w-[60%]">
           <BentoGrid className="lg:grid-rows-3">
             {features.map((feature) => (
               <BentoCard key={feature.name} {...feature} />
