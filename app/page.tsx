@@ -346,7 +346,7 @@ export default function Home() {
                 className="w-full"
               />
               <div className="p-4 space-y-2">
-                <h3 className="text-xl font-semibold">Website Development</h3>
+                <h3 className="text-xl font-semibold">Content Marketing</h3>
                 <p className="text-gray-500 dark:text-gray-400">
                   Take your business to the next level with our web design and
                   development services
