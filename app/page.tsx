@@ -201,7 +201,7 @@ export default function Home() {
         <div className="flex items-center gap-x-4">
           <Link
             href={"#contact-us"}
-            className="py-1 px-6 text-lg hover:bg-[#abcbff] rounded-3xl border-2 border-black text-white bg-[#121212] transition duration-200 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
+            className="py-1 px-6 text-sm hover:bg-[#222482] rounded-3xl border-2 border-black text-white bg-[#121212] transition duration-200 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] "
           >
             Contact Us
           </Link>
@@ -306,7 +306,7 @@ export default function Home() {
             "flex h-fit w-[80%] mx-auto flex-col gap-6 lg:h-fit lg:flex-row my-10"
           }
         >
-          <div className="w-full">
+          <div className="w-full rounded-3xl">
             <div className="bg-white text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
               <Image
                 src={"/images/ecom.png"}
@@ -332,7 +332,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full">
+          <div className="w-full rounded-3xl">
             <div className="bg-white text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
               <Image
                 src={"/images/web.png"}
@@ -358,7 +358,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full">
+          <div className="w-full rounded-3xl">
             <div className="bg-white text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
               <Image
                 src={"/images/mkt.png"}
