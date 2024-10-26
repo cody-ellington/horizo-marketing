@@ -21,7 +21,12 @@ import HyperText from "@/components/ui/hyper-text";
 import SparklesText from "@/components/ui/sparkles-text";
 import AnimatedShinyText from "@/components/ui/animated-shiny-text";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { ProjectShowcase } from "@/components/custom/showcase";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ProjectShowcaseFnB } from "@/components/custom/showcase-fnb";
+import { ProjectShowcaseBeauty } from "@/components/custom/showcase-beauty";
+import { ProjectShowcaseFuniture } from "@/components/custom/showcase-funiture";
+import { ProjectShowcaseBranding } from "@/components/custom/showcase-branding";
+import { ProjectShowcaseOther } from "@/components/custom/showcase-other";
 
 // MAP CIRCLES
 const slugs = [
@@ -390,7 +395,7 @@ export default function Home() {
         <div className="text-center">
           <SparklesText text="Project Showcase" />
         </div>
-        <div className="z-10 flex items-center justify-center my-6 mb-16">
+        <div className="z-10 flex items-center justify-center my-6 mb-8">
           <div
             className={cn(
               "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
@@ -403,7 +408,30 @@ export default function Home() {
           </div>
         </div>
 
-        <ProjectShowcase></ProjectShowcase>
+        <Tabs defaultValue="account" className="w-full">
+          <TabsList className="w-full mx-auto bg-white/0">
+            <TabsTrigger value="fnb">F&B</TabsTrigger>
+            <TabsTrigger value="beauty">Beauty</TabsTrigger>
+            <TabsTrigger value="funiture">Funiture</TabsTrigger>
+            <TabsTrigger value="branding">Branding</TabsTrigger>
+            <TabsTrigger value="other">Other</TabsTrigger>
+          </TabsList>
+          <TabsContent value="fnb">
+            <ProjectShowcaseFnB></ProjectShowcaseFnB>
+          </TabsContent>
+          <TabsContent value="beauty">
+            <ProjectShowcaseBeauty></ProjectShowcaseBeauty>
+          </TabsContent>
+          <TabsContent value="funiture">
+            <ProjectShowcaseFuniture></ProjectShowcaseFuniture>
+          </TabsContent>
+          <TabsContent value="branding">
+            <ProjectShowcaseBranding></ProjectShowcaseBranding>
+          </TabsContent>
+          <TabsContent value="other">
+            <ProjectShowcaseOther></ProjectShowcaseOther>
+          </TabsContent>
+        </Tabs>
       </section>
     </>
   );

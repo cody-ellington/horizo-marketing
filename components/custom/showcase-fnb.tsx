@@ -40,7 +40,7 @@ const works = [
   },
 ];
 
-export function ProjectShowcase() {
+export function ProjectShowcaseFnB() {
   return (
     <section id="photos">
       <div className="grid md:grid-cols-3 gap-8 mt-10 justify-items-center">
