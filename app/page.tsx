@@ -202,8 +202,13 @@ export default function Home() {
   const [color, setColor] = useState("#000000");
 
   useEffect(() => {
-    setColor(theme === "dark" ? "#000000" : "#ffffff");
+    setColor(theme === "dark" ? "#91edff" : "#91edff");
   }, [theme]);
+
+  let logoUrl = "/logo/black-long.png";
+  if (theme === "dark") {
+    logoUrl = "/logo/white-long.png";
+  }
 
   return (
     <>
@@ -216,7 +221,7 @@ export default function Home() {
       >
         <Link href={"/"}>
           <Image
-            src={"/logo/white-long.png"}
+            src={logoUrl}
             alt="Logo"
             width={1000}
             height={1000}
@@ -225,7 +230,7 @@ export default function Home() {
         </Link>
 
         <div className="absolute right-1/2 translate-x-1/2 transform">
-          <div className="hidden md:flex gap-x-10 items-center text-gray-200 font-medium text-lg cursor-pointer">
+          <div className="hidden md:flex gap-x-10 items-center dark:text-gray-200 font-medium text-lg cursor-pointer">
             <Link href={"#showcase"} className="hover:text-blue-600">
               Showcase
             </Link>
@@ -267,18 +272,18 @@ export default function Home() {
       </Element>
 
       {/* HERO SECTION */}
-      <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background md:shadow-xl">
+      <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
         <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
           EMBRACE YOUR ONLINE PRESENSE
         </span>
-        <span className="text-center text-white/70 w-[40%] mt-3">
+        <span className="text-center dark:text-white/70 w-[40%] mt-3">
           This is a subtitle, Lorem ipsum dolor, sit amet consectetur
           adipisicing elit. Voluptates est vel ex totam consequuntur odit porro
           atque dolor accusantium quod temporibus dignissimos
         </span>
         <Particles
           className="absolute inset-0"
-          quantity={100}
+          quantity={200}
           ease={80}
           color={color}
           refresh
@@ -548,11 +553,13 @@ export default function Home() {
         <div className="container px-6 py-8 mx-auto">
           <div className="flex flex-col items-center text-center">
             <a href="#">
-              <img
+              <Image
                 className="w-auto h-14"
-                src="/logo/white-long.png"
+                src={logoUrl}
+                width={1000}
+                height={1000}
                 alt=""
-              ></img>
+              ></Image>
             </a>
 
             <p className="max-w-md mx-auto mt-4 text-gray-500 dark:text-gray-400 capitalize">
