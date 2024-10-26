@@ -1,22 +1,18 @@
 "use client";
 
-import Meteors from "@/components/ui/meteors";
 import Image from "next/image";
 import Particles from "@/components/ui/particles";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { Link as ScrollLink, Element } from "react-scroll";
 import Link from "next/link";
-import { BorderBeam } from "@/components/ui/border-beam";
 import ShineBorder from "@/components/ui/shine-border";
 import { MagicCard } from "@/components/ui/magic-card";
 import GradualSpacing from "@/components/ui/gradual-spacing";
 import RetroGrid from "@/components/ui/retro-grid";
-import IconCloud from "@/components/ui/icon-cloud";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/marquee";
-import BlurFade from "@/components/ui/blur-fade";
 import HyperText from "@/components/ui/hyper-text";
 import SparklesText from "@/components/ui/sparkles-text";
 import AnimatedShinyText from "@/components/ui/animated-shiny-text";
@@ -27,6 +23,16 @@ import { ProjectShowcaseBeauty } from "@/components/custom/showcase-beauty";
 import { ProjectShowcaseFuniture } from "@/components/custom/showcase-funiture";
 import { ProjectShowcaseBranding } from "@/components/custom/showcase-branding";
 import { ProjectShowcaseOther } from "@/components/custom/showcase-other";
+import {
+  BellIcon,
+  CalendarIcon,
+  FileTextIcon,
+  GlobeIcon,
+  InputIcon,
+} from "@radix-ui/react-icons";
+import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
+import BoxReveal from "@/components/ui/box-reveal";
+import { Input } from "@/components/ui/input";
 
 // MAP CIRCLES
 const slugs = [
@@ -139,6 +145,56 @@ const ReviewCard = ({
     </figure>
   );
 };
+
+// Bento / Operation
+const features = [
+  {
+    Icon: FileTextIcon,
+    name: "Save your files",
+    description: "We automatically save your files as you type.",
+    href: "/",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+  },
+  {
+    Icon: InputIcon,
+    name: "Full text search",
+    description: "Search through all your files in one place.",
+    href: "/",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
+  },
+  {
+    Icon: GlobeIcon,
+    name: "Multilingual",
+    description: "Supports 100+ languages and counting.",
+    href: "/",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
+  },
+  {
+    Icon: CalendarIcon,
+    name: "Calendar",
+    description: "Use the calendar to filter your files by date.",
+    href: "/",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+  },
+  {
+    Icon: BellIcon,
+    name: "Notifications",
+    description:
+      "Get notified when someone shares a file or mentions you in a comment.",
+    href: "/",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
+  },
+];
 
 // MAIN FUNCTION
 export default function Home() {
@@ -408,7 +464,7 @@ export default function Home() {
           </div>
         </div>
 
-        <Tabs defaultValue="account" className="w-full">
+        <Tabs defaultValue="fnb" className="w-full">
           <TabsList className="w-full mx-auto bg-white/0">
             <TabsTrigger value="fnb">F&B</TabsTrigger>
             <TabsTrigger value="beauty">Beauty</TabsTrigger>
@@ -433,6 +489,98 @@ export default function Home() {
           </TabsContent>
         </Tabs>
       </section>
+
+      {/* OPERATION SECTION */}
+      <div className="flex gap-5 w-[80%] mx-auto">
+        <div className="w-[40%]">
+          <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
+            <BoxReveal boxColor={"#273994"} duration={0.5}>
+              <p className="text-[3.5rem] font-semibold">
+                Operation<span className="text-[#273994]">.</span>
+              </p>
+            </BoxReveal>
+
+            <BoxReveal boxColor={"#273994"} duration={0.5}>
+              <h2 className="mt-[.5rem] text-[1rem]">
+                UI library for{" "}
+                <span className="text-[#273994]">Design Engineers</span>
+              </h2>
+            </BoxReveal>
+
+            <BoxReveal boxColor={"#273994"} duration={0.5}>
+              <div className="mt-6">
+                <p>
+                  -&gt; 20+ free and open-source animated components built with
+                  <span className="font-semibold text-[#273994]"> React</span>,
+                  <span className="font-semibold text-[#273994]">
+                    {" "}
+                    Typescript
+                  </span>
+                  ,
+                  <span className="font-semibold text-[#273994]">
+                    {" "}
+                    Tailwind CSS
+                  </span>
+                  , and
+                  <span className="font-semibold text-[#273994]">
+                    {" "}
+                    Framer Motion
+                  </span>
+                  . <br />
+                  -&gt; 100% open-source, and customizable. <br />
+                </p>
+              </div>
+            </BoxReveal>
+          </div>
+        </div>
+
+        <div className="w-[60%]">
+          <BentoGrid className="lg:grid-rows-3">
+            {features.map((feature) => (
+              <BentoCard key={feature.name} {...feature} />
+            ))}
+          </BentoGrid>
+        </div>
+      </div>
+
+      {/* FOOTER */}
+      <footer className="bg-white dark:bg-black mt-12">
+        <div className="container px-6 py-8 mx-auto">
+          <div className="flex flex-col items-center text-center">
+            <a href="#">
+              <img
+                className="w-auto h-14"
+                src="/logo/white-long.png"
+                alt=""
+              ></img>
+            </a>
+
+            <p className="max-w-md mx-auto mt-4 text-gray-500 dark:text-gray-400 capitalize">
+              Embrace Your Online Presense. Horizon without and end
+            </p>
+
+            <div className="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
+              <button className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40">
+                <span className="mx-1">Contact Us</span>
+              </button>
+            </div>
+          </div>
+
+          <hr className="my-10 border-gray-200 dark:border-gray-700" />
+
+          <div className="flex flex-col items-center sm:flex-row sm:justify-between">
+            <p className="text-sm text-gray-500">
+              © Copyright 2024. All Rights Reserved.
+            </p>
+
+            <div className="flex mt-3 -mx-2 sm:mt-0">
+              <span className="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300">
+                contact@horizo.marketing
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
