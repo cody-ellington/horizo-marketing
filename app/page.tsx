@@ -33,6 +33,7 @@ import {
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import BoxReveal from "@/components/ui/box-reveal";
 import { Input } from "@/components/ui/input";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 // MAP CIRCLES
 const slugs = [
@@ -205,9 +206,9 @@ export default function Home() {
     setColor(theme === "dark" ? "#91edff" : "#91edff");
   }, [theme]);
 
-  let logoUrl = "/logo/black-long.png";
-  if (theme === "dark") {
-    logoUrl = "/logo/white-long.png";
+  let logoUrl = "/logo/white-long.png";
+  if (theme === "light") {
+    logoUrl = "/logo/black-long.png";
   }
 
   return (
@@ -268,6 +269,8 @@ export default function Home() {
           >
             Contact Us
           </Link>
+
+          {/* <ThemeToggle></ThemeToggle> */}
         </div>
       </Element>
 
