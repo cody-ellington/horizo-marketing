@@ -502,35 +502,35 @@ export default function Home() {
       <div className="flex gap-5 w-[80%] mx-auto">
         <div className="w-[40%]">
           <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
-            <BoxReveal boxColor={"#273994"} duration={0.5}>
+            <BoxReveal boxColor={"#ffffff"} duration={0.5}>
               <p className="text-[3.5rem] font-semibold">
-                Operation<span className="text-[#273994]">.</span>
+                Operation<span className="text-[#ffffff]">.</span>
               </p>
             </BoxReveal>
 
-            <BoxReveal boxColor={"#273994"} duration={0.5}>
+            <BoxReveal boxColor={"#ffffff"} duration={0.5}>
               <h2 className="mt-[.5rem] text-[1rem]">
                 UI library for{" "}
-                <span className="text-[#273994]">Design Engineers</span>
+                <span className="text-[#ffffff]">Design Engineers</span>
               </h2>
             </BoxReveal>
 
-            <BoxReveal boxColor={"#273994"} duration={0.5}>
+            <BoxReveal boxColor={"#ffffff"} duration={0.5}>
               <div className="mt-6">
                 <p>
                   -&gt; 20+ free and open-source animated components built with
-                  <span className="font-semibold text-[#273994]"> React</span>,
-                  <span className="font-semibold text-[#273994]">
+                  <span className="font-semibold text-[#ffffff]"> React</span>,
+                  <span className="font-semibold text-[#ffffff]">
                     {" "}
                     Typescript
                   </span>
                   ,
-                  <span className="font-semibold text-[#273994]">
+                  <span className="font-semibold text-[#ffffff]">
                     {" "}
                     Tailwind CSS
                   </span>
                   , and
-                  <span className="font-semibold text-[#273994]">
+                  <span className="font-semibold text-[#ffffff]">
                     {" "}
                     Framer Motion
                   </span>
