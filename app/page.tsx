@@ -34,6 +34,12 @@ import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import BoxReveal from "@/components/ui/box-reveal";
 import { Input } from "@/components/ui/input";
 import { ThemeToggle } from "@/components/theme-toggle";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 // MAP CIRCLES
 const slugs = [
@@ -226,7 +232,7 @@ export default function Home() {
             alt="Logo"
             width={1000}
             height={1000}
-            className="w-28"
+            className="w-32"
           />
         </Link>
 
@@ -265,7 +271,7 @@ export default function Home() {
         <div className="flex items-center gap-x-4">
           <Link
             href={"#contact-us"}
-            className="py-1 px-6 text-sm hover:bg-[#222482] rounded-3xl border-2 border-black text-white bg-[#121212] transition duration-200 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] "
+            className="py-1 px-6 text-sm hover:bg-[#222482] rounded-3xl border-2 border-black text-black bg-white transition duration-200 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] "
           >
             Contact Us
           </Link>
@@ -393,7 +399,6 @@ export default function Home() {
                   Aliquam vel facilisis dui. Etiam vel ornare neque, eget
                   imperdiet sapien
                 </p>
-                <Button>Contact Us</Button>
               </div>
             </div>
           </div>
@@ -419,7 +424,6 @@ export default function Home() {
                   Aliquam vel facilisis dui. Etiam vel ornare neque, eget
                   imperdiet sapien
                 </p>
-                <Button>Contact Us</Button>
               </div>
             </div>
           </div>
@@ -445,7 +449,6 @@ export default function Home() {
                   Aliquam vel facilisis dui. Etiam vel ornare neque, eget
                   imperdiet sapien
                 </p>
-                <Button>Contact Us</Button>
               </div>
             </div>
           </div>
@@ -498,14 +501,12 @@ export default function Home() {
         </Tabs>
       </section>
 
-      {/* OPERATION SECTION */}
+      {/* GUARANTEE SECTION */}
       <div className="md:flex gap-5 w-[80%] mx-auto">
         <div className="md:w-[40%] mb-10 md:mb-0">
           <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-              <p className="text-[3.5rem] font-semibold">
-                Operation<span className="text-[#ffffff]">.</span>
-              </p>
+              <p className="text-[3.5rem] font-semibold">Our guarantee</p>
             </BoxReveal>
 
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
@@ -551,6 +552,81 @@ export default function Home() {
         </div>
       </div>
 
+      {/* PROCESS SECTION */}
+      <div className="md:flex gap-5 w-[80%] mx-auto py-20">
+        <div className="md:w-[40%] mb-10 md:mb-0">
+          <div className="size-full max-w-lg items-center justify-center overflow-hidden">
+            <BoxReveal boxColor={"#ffffff"} duration={0.5}>
+              <p className="text-[3.5rem] font-semibold">Process</p>
+            </BoxReveal>
+
+            <BoxReveal boxColor={"#ffffff"} duration={0.5}>
+              <h2 className="mt-[.5rem] text-[1rem]">
+                UI library for{" "}
+                <span className="text-[#ffffff]">Design Engineers</span>
+              </h2>
+            </BoxReveal>
+
+            <BoxReveal boxColor={"#ffffff"} duration={0.5}>
+              <div className="mt-6">
+                <p>
+                  -&gt; 20+ free and open-source animated components built with
+                  <span className="font-semibold text-[#ffffff]"> React</span>,
+                  <span className="font-semibold text-[#ffffff]">
+                    {" "}
+                    Typescript
+                  </span>
+                  ,
+                  <span className="font-semibold text-[#ffffff]">
+                    {" "}
+                    Tailwind CSS
+                  </span>
+                  , and
+                  <span className="font-semibold text-[#ffffff]">
+                    {" "}
+                    Framer Motion
+                  </span>
+                  . <br />
+                  -&gt; 100% open-source, and customizable. <br />
+                </p>
+              </div>
+            </BoxReveal>
+          </div>
+        </div>
+
+        <div className="md:w-[60%]">
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionContent>
+                Yes. It adheres to the WAI-ARIA design pattern.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2">
+              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionContent>
+                Yes. It adheres to the WAI-ARIA design pattern.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3">
+              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionContent>
+                Yes. It adheres to the WAI-ARIA design pattern.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4">
+              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionContent>
+                Yes. It adheres to the WAI-ARIA design pattern.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
+      </div>
+
       {/* FOOTER */}
       <footer className="bg-white dark:bg-black mt-12">
         <div className="container px-6 py-8 mx-auto">
@@ -571,7 +647,13 @@ export default function Home() {
 
             <div className="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
               <button className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40">
-                <span className="mx-1">Contact Us</span>
+                <span className="mx-1">Let&apos;s get started</span>
+              </button>
+              <button className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40">
+                <span className="mx-1">Find Us On Behance</span>
+              </button>
+              <button className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40">
+                <span className="mx-1">Or on Facebook</span>
               </button>
             </div>
           </div>
@@ -580,10 +662,16 @@ export default function Home() {
 
           <div className="flex flex-col items-center sm:flex-row sm:justify-between">
             <p className="text-sm text-gray-500">
-              © Copyright 2024. All Rights Reserved.
+              Horizo Marketing © Copyright 2024. All Rights Reserved.
             </p>
 
             <div className="flex mt-3 -mx-2 sm:mt-0">
+              <span className="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300">
+                (+84) 335 580 068
+              </span>
+              <span className="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300">
+                (+84) 975 092 460
+              </span>
               <span className="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300">
                 contact@horizo.marketing
               </span>
