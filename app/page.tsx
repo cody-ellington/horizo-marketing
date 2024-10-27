@@ -212,7 +212,7 @@ export default function Home() {
     setColor(theme === "dark" ? "#91edff" : "#91edff");
   }, [theme]);
 
-  let logoUrl = "/logo/white-long.png";
+  let logoUrl = "/logo/white-ls.png";
   if (theme === "light") {
     logoUrl = "/logo/black-long.png";
   }
@@ -232,7 +232,7 @@ export default function Home() {
             alt="Logo"
             width={1000}
             height={1000}
-            className="w-32"
+            className="w-20"
           />
         </Link>
 
@@ -633,7 +633,7 @@ export default function Home() {
           <div className="flex flex-col items-center text-center">
             <a href="#">
               <Image
-                className="w-auto h-14"
+                className="w-auto h-18"
                 src={logoUrl}
                 width={1000}
                 height={1000}
