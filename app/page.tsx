@@ -504,7 +504,7 @@ export default function Home() {
       {/* GUARANTEE SECTION */}
       <div className="md:flex gap-5 w-[80%] mx-auto">
         <div className="md:w-[40%] mb-10 md:mb-0">
-          <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
+          <div className="size-full max-w-lg items-center justify-center overflow-hidden">
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
               <p className="text-[3.5rem] font-semibold">Our guarantee</p>
             </BoxReveal>
