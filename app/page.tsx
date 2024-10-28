@@ -293,7 +293,7 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
-        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-2xl md:text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-2xl md:text-7xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
           EMBRACE YOUR ONLINE PRESENSE
         </span>
         <span id="about" className="text-center dark:text-white/70 w-[80%] md:w-[40%] mt-3">
@@ -325,14 +325,15 @@ export default function Home() {
         className="relative flex h-[500px] w-[80%] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl"
         color={["#546eff", "#8feffe", "#7bffd7"]}
       >
-        <span className="pointer-events-none py-2 whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+        <span className="pointer-events-none py-2 whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-[#fece8fab] dark:to-[#546eff62]">
           CÂU CHUYỆN VỀ CHÚNG TÔI
         </span>
-        <span className="text-center dark:text-white/70 w-[80%] md:w-[50%] mt-3">
+        <span className="text-center font-extralight	 dark:text-white/50 w-[80%] md:w-[45%] mt-3">
           Horizo được lấy cảm hứng từ “Horizon” (đường chân trời). Đường chân
           trời luôn di chuyển khi ta tiến lên và dù đi xa đến đâu, ta vẫn luôn
-          có thể tiến xa hơn, tìm kiếm những ‘chân trời” mới cho riêng mình. Ra
-          đời với sự tâm huyết và kinh nghiệm trong lĩnh vực về website &
+          có thể tiến xa hơn, tìm kiếm những ‘chân trời” mới cho riêng mình.
+          <br></br><br></br>
+          Ra đời với sự tâm huyết và kinh nghiệm trong lĩnh vực về website &
           content marketing, Horizo sẽ giúp bạn xây dựng thương hiệu vững mạnh
           hơn trong thị trường trực tuyến đầy cạnh tranh như hiện nay.
         </span>
