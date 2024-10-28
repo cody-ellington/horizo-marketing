@@ -157,49 +157,53 @@ const ReviewCard = ({
 const features = [
   {
     Icon: FileTextIcon,
-    name: "Save your files",
-    description: "We automatically save your files as you type.",
+    name: "Trao đổi & xác định nhu cầu ",
+    description:
+      "Mục tiêu: Lắng nghe, thấu hiểu mong muốn và kỳ vọng của bạn về giao diện website, đối tượng khách hàng và phong cách thương hiệu. Phân tích: Bằng cách điền chi tiết bảng khảo sát từ Horizo, cả bạn và team Horizo sẽ xác định được cụ thể các tính năng cần thiết và mục đích sử dụng website, giúp nắm rõ yêu cầu và đưa ra đề xuất phù hợp",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+    className: "",
   },
   {
     Icon: InputIcon,
-    name: "Full text search",
-    description: "Search through all your files in one place.",
+    name: "Lựa chọn giải pháp phù hợp",
+    description:
+      "Dựa trên nhu cầu đã xác định, Horizo sẽ gợi ý các giải pháp phù hợp về nền tảng, giao diện và tính năng nhằm tối ưu hóa trải nghiệm người dùng và đạt hiệu quả cho mục đích làm website của bạn. Đề xuất chi phí và thời gian dự kiến hoàn thành để giúp bạn hình dung được bao quát dự án.",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
+    className: "",
   },
   {
     Icon: GlobeIcon,
-    name: "Multilingual",
-    description: "Supports 100+ languages and counting.",
+    name: "Thỏa thuận",
+    description:
+      "Lập hợp đồng dịch vụ gồm phạm vi công việc, yêu cầu kỹ thuật, thời gian hoàn thành và các điều khoản liên quan để bảo vệ quyền lợi của cả hai bên. Chốt các điều khoản thanh toán: Thỏa thuận về chi phí, phương thức thanh toán và lịch thanh toán rõ ràng trước khi bắt đầu triển khai.",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
+    className: "",
   },
   {
     Icon: CalendarIcon,
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
+    name: "Triển khai chi tiết",
+    description:
+      "Team Horizo tiến hành lên sitemap, layout gửi bản demo để khách hàng duyệt và phản hồi. Sau khi thống nhất sẽ tiến hành thiết kế phần code. Sau khi phát triển xong, website được kiểm tra kỹ càng để đảm bảo hoạt động trơn tru trên các thiết bị, tối ưu hóa hiệu suất và bảo mật",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+    className: "",
   },
   {
     Icon: BellIcon,
-    name: "Notifications",
+    name: "Bàn giao và hướng dẫn quản trị",
     description:
-      "Get notified when someone shares a file or mentions you in a comment.",
+      "Khi website hoàn tất và đạt yêu cầu, Horizo sẽ bàn giao quyền truy cập, hướng dẫn và các thông tin quản lý cho khách hàng.",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
+    className: "",
   },
 ];
 
@@ -238,33 +242,40 @@ export default function Home() {
 
         <div className="absolute right-1/2 translate-x-1/2 transform">
           <div className="hidden md:flex gap-x-10 items-center dark:text-gray-200 font-medium text-lg cursor-pointer">
+            <Link href={"#about"} className="hover:text-blue-600">
+              Về chúng tôi
+            </Link>
+
+            <Link href={"#service"} className="hover:text-blue-600">
+              Dịch vụ
+            </Link>
+
             <Link href={"#showcase"} className="hover:text-blue-600">
               Showcase
             </Link>
-
-            <ScrollLink
-              to="services"
+            {/* <ScrollLink
+              to="#services"
               smooth={true}
               className="hover:text-blue-600"
             >
-              Services
+              Dịch vụ
             </ScrollLink>
 
             <ScrollLink
-              to="process"
+              to="#process"
               smooth={true}
               className="hover:text-blue-600"
             >
-              Process
-            </ScrollLink>
-
+              Quy trình
+            </ScrollLink> */}
+{/* 
             <ScrollLink
               to="guarentees"
               smooth={true}
               className="hover:text-blue-600"
             >
-              Guarentees
-            </ScrollLink>
+              Cam kết
+            </ScrollLink> */}
           </div>
         </div>
 
@@ -273,7 +284,7 @@ export default function Home() {
             href={"#contact-us"}
             className="py-1 px-6 text-sm hover:bg-[#222482] rounded-3xl border-2 border-black text-black bg-white transition duration-200 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] "
           >
-            Contact Us
+            Liên Hệ
           </Link>
 
           {/* <ThemeToggle></ThemeToggle> */}
@@ -285,10 +296,9 @@ export default function Home() {
         <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-2xl md:text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
           EMBRACE YOUR ONLINE PRESENSE
         </span>
-        <span className="text-center dark:text-white/70 w-[80%] md:w-[40%] mt-3">
-          This is a subtitle, Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Voluptates est vel ex totam consequuntur odit porro
-          atque dolor accusantium quod temporibus dignissimos
+        <span id="about" className="text-center dark:text-white/70 w-[80%] md:w-[40%] mt-3">
+          Giải pháp sáng tạo giúp nâng cao “sự hiện diện” thương hiệu của bạn
+          trong kỷ nguyên số
         </span>
         <Particles
           className="absolute inset-0"
@@ -313,10 +323,18 @@ export default function Home() {
 
       <ShineBorder
         className="relative flex h-[500px] w-[80%] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl"
-        color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+        color={["#546eff", "#8feffe", "#7bffd7"]}
       >
-        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-2xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-          BRAND STORY
+        <span className="pointer-events-none py-2 whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+          CÂU CHUYỆN VỀ CHÚNG TÔI
+        </span>
+        <span className="text-center dark:text-white/70 w-[80%] md:w-[50%] mt-3">
+          Horizo được lấy cảm hứng từ “Horizon” (đường chân trời). Đường chân
+          trời luôn di chuyển khi ta tiến lên và dù đi xa đến đâu, ta vẫn luôn
+          có thể tiến xa hơn, tìm kiếm những ‘chân trời” mới cho riêng mình. Ra
+          đời với sự tâm huyết và kinh nghiệm trong lĩnh vực về website &
+          content marketing, Horizo sẽ giúp bạn xây dựng thương hiệu vững mạnh
+          hơn trong thị trường trực tuyến đầy cạnh tranh như hiện nay.
         </span>
       </ShineBorder>
 
@@ -330,19 +348,19 @@ export default function Home() {
           className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl md:w-[30%]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
-          INTEGRITY
+          CHÍNH TRỰC
         </MagicCard>
         <MagicCard
           className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl md:w-[40%]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
-          RESPONSIBILITY
+          TRÁCH NHIỆM
         </MagicCard>
         <MagicCard
           className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl md:w-[30%]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
-          WORTH
+          XỨNG ĐÁNG
         </MagicCard>
       </div>
 
@@ -359,14 +377,14 @@ export default function Home() {
           ))}
         </Marquee>
         <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+        <div id="service" className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
       </div>
 
       {/* SERVICES SECTION */}
-      <div className="relative flex h-fit w-full flex-col overflow-hidden rounded-lg bg-background md:shadow-xl">
+      <div id="service" className="relative flex h-fit w-full flex-col overflow-hidden rounded-lg bg-background md:shadow-xl">
         <GradualSpacing
           className="mt-6 font-display text-center text-4xl font-bold -tracking-widest  text-black dark:text-white md:text-6xl md:leading-[5rem]"
-          text="Our Services"
+          text="CHÚNG TÔI CÓ THỂ LÀM NHỮNG GÌ?"
         />
         <HyperText
           className="text-xl text-center font-bold text-black dark:text-white"
@@ -390,14 +408,19 @@ export default function Home() {
               <div className="p-4 space-y-2">
                 <h3 className="text-xl font-semibold">E-Commerce Website</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Take your business to the next level with our web design and
-                  development services
+                  Thiết kế giao diện website UX UI
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  non neque pellentesque, sodales quam vitae, consequat lectus.
-                  Aliquam vel facilisis dui. Etiam vel ornare neque, eget
-                  imperdiet sapien
+                  Tối ưu hóa danh mục sản phẩm
+                </p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Thiết lập tính năng giỏ hàng và thanh toán
+                </p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Tích hợp công cụ chatbot, social media
+                </p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Bảo trì và hỗ trợ kỹ thuật
                 </p>
               </div>
             </div>
@@ -415,14 +438,19 @@ export default function Home() {
               <div className="p-4 space-y-2">
                 <h3 className="text-xl font-semibold">Branding Website</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Take your business to the next level with our web design and
-                  development services
+                  Thiết kế giao diện website UX UI
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  non neque pellentesque, sodales quam vitae, consequat lectus.
-                  Aliquam vel facilisis dui. Etiam vel ornare neque, eget
-                  imperdiet sapien
+                  Thiết kế Landing Page
+                </p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Hệ thống quản lý liên hệ và thông tin
+                </p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Tích hợp công cụ chatbot, mạng xã hội, email marketing
+                </p>
+                <p id="showcase" className="text-gray-500 dark:text-gray-400">
+                  Bảo trì và hỗ trợ kỹ thuật
                 </p>
               </div>
             </div>
@@ -440,14 +468,16 @@ export default function Home() {
               <div className="p-4 space-y-2">
                 <h3 className="text-xl font-semibold">Content Marketing</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Take your business to the next level with our web design and
-                  development services
+                  Social Media Content
+                </p>
+                <p className="text-gray-500 dark:text-gray-400">PR Media</p>
+                <p className="text-gray-500 dark:text-gray-400">Copywriting</p>
+                <p className="text-gray-500 dark:text-gray-400">Blog SEO</p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Video Content
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  non neque pellentesque, sodales quam vitae, consequat lectus.
-                  Aliquam vel facilisis dui. Etiam vel ornare neque, eget
-                  imperdiet sapien
+                  User-Generated Content (UGC)
                 </p>
               </div>
             </div>
@@ -469,7 +499,7 @@ export default function Home() {
             )}
           >
             <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-              <span>✨ Make one with your ideas</span>
+              <span>✨ Biến ý tưởng của bạn thành hiện thực</span>
               <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
             </AnimatedShinyText>
           </div>
@@ -501,54 +531,100 @@ export default function Home() {
         </Tabs>
       </section>
 
-      {/* GUARANTEE SECTION */}
-      <div className="md:flex gap-5 w-[80%] mx-auto">
+      {/* PROCESS SECTION */}
+      <div id="process" className="md:flex gap-5 w-[80%] mx-auto py-12">
         <div className="md:w-[40%] mb-10 md:mb-0">
           <div className="size-full max-w-lg items-center justify-center overflow-hidden">
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-              <p className="text-[3.5rem] font-semibold">Our guarantee</p>
+              <p className="text-[3.5rem] font-semibold">
+                Quy trình của chúng tôi
+              </p>
             </BoxReveal>
 
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
               <h2 className="mt-[.5rem] text-[1rem]">
-                UI library for{" "}
-                <span className="text-[#ffffff]">Design Engineers</span>
+                Bắt đầu xây dựng website mang đậm nét riêng cho thương hiệu của
+                bạn cùng Horizo.{" "}
               </h2>
-            </BoxReveal>
-
-            <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-              <div className="mt-6">
-                <p>
-                  -&gt; 20+ free and open-source animated components built with
-                  <span className="font-semibold text-[#ffffff]"> React</span>,
-                  <span className="font-semibold text-[#ffffff]">
-                    {" "}
-                    Typescript
-                  </span>
-                  ,
-                  <span className="font-semibold text-[#ffffff]">
-                    {" "}
-                    Tailwind CSS
-                  </span>
-                  , and
-                  <span className="font-semibold text-[#ffffff]">
-                    {" "}
-                    Framer Motion
-                  </span>
-                  . <br />
-                  -&gt; 100% open-source, and customizable. <br />
-                </p>
-              </div>
             </BoxReveal>
           </div>
         </div>
 
         <div className="md:w-[60%]">
-          <BentoGrid className="lg:grid-rows-3">
+          {/* <BentoGrid className="lg:grid-rows-3">
             {features.map((feature) => (
               <BentoCard key={feature.name} {...feature} />
             ))}
-          </BentoGrid>
+          </BentoGrid> */}
+
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Trao đổi & xác định nhu cầu</AccordionTrigger>
+              <AccordionContent>
+                Mục tiêu: Lắng nghe, thấu hiểu mong muốn và kỳ vọng của bạn về
+                giao diện website, đối tượng khách hàng và phong cách thương
+                hiệu.
+                <br></br>
+                <br></br>
+                Phân tích: Bằng cách điền chi tiết bảng khảo sát từ Horizo, cả
+                bạn và team Horizo sẽ xác định được cụ thể các tính năng cần
+                thiết và mục đích sử dụng website, giúp nắm rõ yêu cầu và đưa ra
+                đề xuất phù hợp.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2">
+              <AccordionTrigger>Lựa chọn giải pháp phù hợp</AccordionTrigger>
+              <AccordionContent>
+                Dựa trên nhu cầu đã xác định, Horizo sẽ gợi ý các giải pháp phù
+                hợp về nền tảng, giao diện và tính năng nhằm tối ưu hóa trải
+                nghiệm người dùng và đạt hiệu quả cho mục đích làm website của
+                bạn.
+                <br></br>
+                <br></br>
+                Đề xuất chi phí và thời gian dự kiến hoàn thành để giúp bạn hình
+                dung được bao quát dự án{" "}
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3">
+              <AccordionTrigger>Thỏa thuận</AccordionTrigger>
+              <AccordionContent>
+                Lập hợp đồng dịch vụ gồm phạm vi công việc, yêu cầu kỹ thuật,
+                thời gian hoàn thành và các điều khoản liên quan để bảo vệ quyền
+                lợi của cả hai bên.
+                <br></br>
+                <br></br>
+                Chốt các điều khoản thanh toán: Thỏa thuận về chi phí, phương
+                thức thanh toán và lịch thanh toán rõ ràng trước khi bắt đầu
+                triển khai
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4">
+              <AccordionTrigger>Triển khai chi tiết</AccordionTrigger>
+              <AccordionContent>
+                Team Horizo tiến hành lên sitemap, layout gửi bản demo để khách
+                hàng duyệt và phản hồi. Sau khi thống nhất sẽ tiến hành thiết kế
+                phần code.
+                <br></br>
+                <br></br>
+                Sau khi phát triển xong, website được kiểm tra kỹ càng để đảm
+                bảo hoạt động trơn tru trên các thiết bị, tối ưu hóa hiệu suất
+                và bảo mật
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5">
+              <AccordionTrigger>
+                Bàn giao và hướng dẫn quản trị
+              </AccordionTrigger>
+              <AccordionContent>
+                Khi website hoàn tất và đạt yêu cầu, Horizo sẽ bàn giao quyền
+                truy cập, hướng dẫn và các thông tin quản lý cho khách hàng.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </div>
 
@@ -557,39 +633,14 @@ export default function Home() {
         <div className="md:w-[40%] mb-10 md:mb-0">
           <div className="size-full max-w-lg items-center justify-center overflow-hidden">
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-              <p className="text-[3.5rem] font-semibold">Process</p>
+              <p className="text-[3.5rem] font-semibold">Chúng tôi đảm bảo</p>
             </BoxReveal>
 
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
               <h2 className="mt-[.5rem] text-[1rem]">
-                UI library for{" "}
-                <span className="text-[#ffffff]">Design Engineers</span>
+                Horizo luôn nỗ lực và cam kết tạo ra các sản phẩm có “trách
+                nhiệm” & “xứng đáng” với những gì bạn mong đợi.
               </h2>
-            </BoxReveal>
-
-            <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-              <div className="mt-6">
-                <p>
-                  -&gt; 20+ free and open-source animated components built with
-                  <span className="font-semibold text-[#ffffff]"> React</span>,
-                  <span className="font-semibold text-[#ffffff]">
-                    {" "}
-                    Typescript
-                  </span>
-                  ,
-                  <span className="font-semibold text-[#ffffff]">
-                    {" "}
-                    Tailwind CSS
-                  </span>
-                  , and
-                  <span className="font-semibold text-[#ffffff]">
-                    {" "}
-                    Framer Motion
-                  </span>
-                  . <br />
-                  -&gt; 100% open-source, and customizable. <br />
-                </p>
-              </div>
             </BoxReveal>
           </div>
         </div>
@@ -597,30 +648,43 @@ export default function Home() {
         <div className="md:w-[60%]">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionTrigger>Chất lượng hàng đầu</AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Cam kết mang đến giải pháp về website chất lượng cao, đảm bảo
+                giao diện phù hợp, tối ưu hóa trải nghiệm người dùng.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionTrigger>Chính trực trong hợp tác</AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Sự chính trực khi tư vấn và hợp tác luôn là kim chỉ nam của
+                Horizo từ ngày đầu thành lập để cùng tạo nên kết quả WIN-WIN.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionTrigger>Tiến độ đúng hẹn</AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Làm việc theo lịch trình cụ thể và rõ ràng, luôn đảm bảo hoàn
+                thành dự án đúng thời hạn đã cam kết với khách hàng.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionTrigger>Tư vấn và hỗ trợ tận tâm</AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Luôn sẵn sàng hỗ trợ và tư vấn khách hàng từ bước lên ý tưởng
+                đến khi vận hành. Giải đáp các thắc mắc và bảo trì.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5">
+              <AccordionTrigger>Bảo mật thông tin tuyệt đối</AccordionTrigger>
+              <AccordionContent>
+                Horizo cam kết bảo mật mọi thông tin của khách hàng, từ ý tưởng
+                đến dữ liệu, đảm bảo tính bảo mật và riêng tư tuyệt đối trong
+                quá trình hợp tác
               </AccordionContent>
             </AccordionItem>
           </Accordion>
