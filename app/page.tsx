@@ -40,6 +40,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Meteors from "@/components/ui/meteors";
 
 // MAP CIRCLES
 const slugs = [
@@ -322,9 +323,10 @@ export default function Home() {
       </div> */}
 
       <ShineBorder
-        className="relative flex h-[500px] w-[80%] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl"
+        className="relative flex h-[450px] w-[80%] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg border bg-transparent md:shadow-xl"
         color={["#546eff", "#8feffe", "#7bffd7"]}
       >
+        <Meteors></Meteors>
         <span className="pointer-events-none py-2 whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-[#fece8fab] dark:to-[#546eff62]">
           CÂU CHUYỆN VỀ CHÚNG TÔI
         </span>
