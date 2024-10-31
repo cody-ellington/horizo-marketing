@@ -43,7 +43,7 @@ const works = [
 export function ProjectShowcaseFnB() {
   return (
     <section id="photos">
-      <div className="grid md:grid-cols-3 gap-8 mt-10 justify-items-center">
+      <div className="grid md:grid-cols-4 gap-8 mt-10 justify-items-center">
         {works.map(({ imageUrl, title, subTitle, link }, idx) => (
           <BlurFade
             key={title}
@@ -56,14 +56,14 @@ export function ProjectShowcaseFnB() {
                 height={10000}
                 width={10000}
                 className="
-                  h-5/6 w-full object-cover rounded-lg"
+                  h-3/4 w-full object-cover rounded-lg"
                 src={imageUrl}
                 alt={`Random stock image ${idx + 1}`}
               />
               <h3 className="text-lg font-semibold mt-3 text-center">
                 {title}
               </h3>
-              <div className=" text-center">{subTitle}</div>
+              <div className=" text-center text-gray-500">{subTitle}</div>
             </Link>
           </BlurFade>
         ))}

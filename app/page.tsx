@@ -244,11 +244,11 @@ export default function Home() {
         <div className="absolute right-1/2 translate-x-1/2 transform">
           <div className="hidden md:flex gap-x-10 items-center dark:text-gray-200 font-medium text-lg cursor-pointer">
             <Link href={"#about"} className="hover:text-blue-600">
-              Về chúng tôi
+              About Us
             </Link>
 
             <Link href={"#service"} className="hover:text-blue-600">
-              Dịch vụ
+              Services
             </Link>
 
             <Link href={"#showcase"} className="hover:text-blue-600">
@@ -283,9 +283,9 @@ export default function Home() {
         <div className="flex items-center gap-x-4">
           <Link
             href={"#contact-us"}
-            className="py-1 px-6 text-sm hover:bg-[#222482] rounded-3xl border-2 border-black text-black bg-white transition duration-200 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] "
+            className="py-1 px-6 text-sm hover:bg-[#55d7ff] rounded-3xl border-2 border-black text-black bg-white transition duration-200 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] "
           >
-            Liên Hệ
+            Contact Us
           </Link>
 
           {/* <ThemeToggle></ThemeToggle> */}
@@ -294,10 +294,10 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
-        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-2xl md:text-7xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-2xl md:text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
           EMBRACE YOUR ONLINE PRESENSE
         </span>
-        <span id="about" className="text-center dark:text-white/70 w-[80%] md:w-[40%] mt-3">
+        <span id="about" className="text-center md:text-lg dark:text-white/70 w-[80%] md:w-[40%] mt-3">
           Giải pháp sáng tạo giúp nâng cao “sự hiện diện” thương hiệu của bạn
           trong kỷ nguyên số
         </span>
@@ -323,14 +323,13 @@ export default function Home() {
       </div> */}
 
       <ShineBorder
-        className="relative flex h-[450px] w-[80%] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg border bg-transparent md:shadow-xl"
+        className="relative flex h-[450px] w-[80%] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg border bg-[url('/images/story.png')] bg-cover md:shadow-xl"
         color={["#546eff", "#8feffe", "#7bffd7"]}
       >
-        <Meteors></Meteors>
-        <span className="pointer-events-none py-2 whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-[#fece8fab] dark:to-[#546eff62]">
-          CÂU CHUYỆN VỀ CHÚNG TÔI
+        <span className="pointer-events-none py-2 whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-[#fece8f] dark:to-[#00d9ff00]">
+          OUR STORY
         </span>
-        <span className="text-center font-extralight	 dark:text-white/50 w-[80%] md:w-[45%] mt-3">
+        <span className="text-center dark:text-white/70 w-[80%] md:w-[45%] mt-3">
           Horizo được lấy cảm hứng từ “Horizon” (đường chân trời). Đường chân
           trời luôn di chuyển khi ta tiến lên và dù đi xa đến đâu, ta vẫn luôn
           có thể tiến xa hơn, tìm kiếm những ‘chân trời” mới cho riêng mình.
@@ -386,8 +385,8 @@ export default function Home() {
       {/* SERVICES SECTION */}
       <div id="service" className="relative flex h-fit w-full flex-col overflow-hidden rounded-lg bg-background md:shadow-xl">
         <GradualSpacing
-          className="mt-6 font-display text-center text-4xl font-bold -tracking-widest  text-black dark:text-white md:text-6xl md:leading-[5rem]"
-          text="CHÚNG TÔI CÓ THỂ LÀM NHỮNG GÌ?"
+          className="mt-6 font-display text-center text-4xl font-bold -tracking-widest  text-black dark:text-white md:text-5xl md:leading-[5rem]"
+          text="OUR SERVICES"
         />
         <HyperText
           className="text-xl text-center font-bold text-black dark:text-white"
@@ -409,20 +408,20 @@ export default function Home() {
                 className="w-full"
               />
               <div className="p-4 space-y-2">
-                <h3 className="text-xl font-semibold">E-Commerce Website</h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <h3 className="text-2xl font-semibold uppercase mb-5">E-Commerce Website</h3>
+                <p className="text-gray-500 dark:text-gray-200">
                   Thiết kế giao diện website UX UI
                 </p>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 dark:text-gray-200">
                   Tối ưu hóa danh mục sản phẩm
                 </p>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 dark:text-gray-200">
                   Thiết lập tính năng giỏ hàng và thanh toán
                 </p>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 dark:text-gray-200">
                   Tích hợp công cụ chatbot, social media
                 </p>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 dark:text-gray-200">
                   Bảo trì và hỗ trợ kỹ thuật
                 </p>
               </div>
@@ -439,20 +438,20 @@ export default function Home() {
                 className="w-full"
               />
               <div className="p-4 space-y-2">
-                <h3 className="text-xl font-semibold">Branding Website</h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <h3 className="text-2xl font-semibold uppercase mb-5">Branding Website</h3>
+                <p className="text-gray-500 dark:text-gray-200">
                   Thiết kế giao diện website UX UI
                 </p>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 dark:text-gray-200">
                   Thiết kế Landing Page
                 </p>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 dark:text-gray-200">
                   Hệ thống quản lý liên hệ và thông tin
                 </p>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 dark:text-gray-200">
                   Tích hợp công cụ chatbot, mạng xã hội, email marketing
                 </p>
-                <p id="showcase" className="text-gray-500 dark:text-gray-400">
+                <p id="showcase" className="text-gray-500 dark:text-gray-200">
                   Bảo trì và hỗ trợ kỹ thuật
                 </p>
               </div>
@@ -469,17 +468,17 @@ export default function Home() {
                 className="w-full"
               />
               <div className="p-4 space-y-2">
-                <h3 className="text-xl font-semibold">Content Marketing</h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <h3 className="text-2xl font-semibold uppercase mb-5">Content Marketing</h3>
+                <p className="text-gray-500 dark:text-gray-200">
                   Social Media Content
                 </p>
-                <p className="text-gray-500 dark:text-gray-400">PR Media</p>
-                <p className="text-gray-500 dark:text-gray-400">Copywriting</p>
-                <p className="text-gray-500 dark:text-gray-400">Blog SEO</p>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 dark:text-gray-200">PR Media</p>
+                <p className="text-gray-500 dark:text-gray-200">Copywriting</p>
+                <p className="text-gray-500 dark:text-gray-200">Blog SEO</p>
+                <p className="text-gray-500 dark:text-gray-200">
                   Video Content
                 </p>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 dark:text-gray-200">
                   User-Generated Content (UGC)
                 </p>
               </div>
@@ -540,7 +539,7 @@ export default function Home() {
           <div className="size-full max-w-lg items-center justify-center overflow-hidden">
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
               <p className="text-[3.5rem] font-semibold">
-                Quy trình của chúng tôi
+              Our Process
               </p>
             </BoxReveal>
 
@@ -636,7 +635,7 @@ export default function Home() {
         <div className="md:w-[40%] mb-10 md:mb-0">
           <div className="size-full max-w-lg items-center justify-center overflow-hidden">
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-              <p className="text-[3.5rem] font-semibold">Chúng tôi đảm bảo</p>
+              <p className="text-[3.5rem] font-semibold">Guarantees</p>
             </BoxReveal>
 
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
@@ -714,7 +713,7 @@ export default function Home() {
 
             <div className="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
               <button className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40">
-                <span className="mx-1">Liên Hệ</span>
+                <span className="mx-1">Contact Us</span>
               </button>
               <button className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40">
                 <span className="mx-1">Behance</span>
