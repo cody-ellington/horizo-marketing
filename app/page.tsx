@@ -269,7 +269,7 @@ export default function Home() {
             >
               Quy trình
             </ScrollLink> */}
-{/* 
+            {/* 
             <ScrollLink
               to="guarentees"
               smooth={true}
@@ -297,7 +297,10 @@ export default function Home() {
         <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-2xl md:text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
           EMBRACE YOUR ONLINE PRESENSE
         </span>
-        <span id="about" className="text-center md:text-lg dark:text-white/70 w-[80%] md:w-[40%] mt-3">
+        <span
+          id="about"
+          className="text-center md:text-lg dark:text-white/70 w-[80%] md:w-[40%] mt-3"
+        >
           Giải pháp sáng tạo giúp nâng cao “sự hiện diện” thương hiệu của bạn
           trong kỷ nguyên số
         </span>
@@ -333,7 +336,8 @@ export default function Home() {
           Horizo được lấy cảm hứng từ “Horizon” (đường chân trời). Đường chân
           trời luôn di chuyển khi ta tiến lên và dù đi xa đến đâu, ta vẫn luôn
           có thể tiến xa hơn, tìm kiếm những ‘chân trời” mới cho riêng mình.
-          <br></br><br></br>
+          <br></br>
+          <br></br>
           Ra đời với sự tâm huyết và kinh nghiệm trong lĩnh vực về website &
           content marketing, Horizo sẽ giúp bạn xây dựng thương hiệu vững mạnh
           hơn trong thị trường trực tuyến đầy cạnh tranh như hiện nay.
@@ -379,11 +383,17 @@ export default function Home() {
           ))}
         </Marquee>
         <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-        <div id="service" className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+        <div
+          id="service"
+          className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"
+        ></div>
       </div>
 
       {/* SERVICES SECTION */}
-      <div id="service" className="relative flex h-fit w-full flex-col overflow-hidden rounded-lg bg-background md:shadow-xl">
+      <div
+        id="service"
+        className="relative flex h-fit w-full flex-col overflow-hidden rounded-lg bg-background md:shadow-xl"
+      >
         <GradualSpacing
           className="mt-6 font-display text-center text-4xl font-bold -tracking-widest  text-black dark:text-white md:text-5xl md:leading-[5rem]"
           text="OUR SERVICES"
@@ -408,7 +418,9 @@ export default function Home() {
                 className="w-full"
               />
               <div className="p-4 space-y-2">
-                <h3 className="text-2xl font-semibold uppercase mb-5">E-Commerce Website</h3>
+                <h3 className="text-2xl font-semibold uppercase mb-5">
+                  E-Commerce Website
+                </h3>
                 <p className="text-gray-500 dark:text-gray-200">
                   Thiết kế giao diện website UX UI
                 </p>
@@ -438,7 +450,9 @@ export default function Home() {
                 className="w-full"
               />
               <div className="p-4 space-y-2">
-                <h3 className="text-2xl font-semibold uppercase mb-5">Branding Website</h3>
+                <h3 className="text-2xl font-semibold uppercase mb-5">
+                  Branding Website
+                </h3>
                 <p className="text-gray-500 dark:text-gray-200">
                   Thiết kế giao diện website UX UI
                 </p>
@@ -468,7 +482,9 @@ export default function Home() {
                 className="w-full"
               />
               <div className="p-4 space-y-2">
-                <h3 className="text-2xl font-semibold uppercase mb-5">Content Marketing</h3>
+                <h3 className="text-2xl font-semibold uppercase mb-5">
+                  Content Marketing
+                </h3>
                 <p className="text-gray-500 dark:text-gray-200">
                   Social Media Content
                 </p>
@@ -532,15 +548,90 @@ export default function Home() {
           </TabsContent>
         </Tabs>
       </section>
+      {/* GUARANTEE #2 SECTION */}
+      <section className="py-32 md:w-[80%] mx-auto">
+        <div className="container">
+          <p className="mb-4 text-xs text-muted-foreground">GUARANTEE</p>
+          <h2 className="text-3xl font-medium lg:text-5xl">
+            A better way to build websites
+          </h2>
+          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:mt-20 lg:grid-cols-5">
+            <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
+              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12"></span>
+              <div>
+                <h3 className="font-medium md:mb-2 md:text-lg">
+                  Chất lượng hàng đầu
+                  <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
+                </h3>
+                <p className="text-sm text-muted-foreground md:text-base">
+                  Cam kết mang đến giải pháp về website chất lượng cao, đảm bảo
+                  giao diện phù hợp, tối ưu hóa trải nghiệm người dùng.
+                </p>
+              </div>
+            </div>
+            <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
+              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12"></span>
+              <div>
+                <h3 className="font-medium md:mb-2 md:text-lg">
+                  Chính trực trong hợp tác
+                  <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
+                </h3>
+                <p className="text-sm text-muted-foreground md:text-base">
+                  Sự chính trực khi tư vấn và hợp tác luôn là kim chỉ nam của
+                  Horizo từ ngày đầu thành lập để cùng tạo nên kết quả WIN-WIN.
+                </p>
+              </div>
+            </div>
+            <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
+              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12"></span>
+              <div>
+                <h3 className="font-medium md:mb-2 md:text-lg">
+                  Tiến độ đúng hẹn
+                  <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
+                </h3>
+                <p className="text-sm text-muted-foreground md:text-base">
+                  Làm việc theo lịch trình cụ thể và rõ ràng, luôn đảm bảo hoàn
+                  thành dự án đúng thời hạn đã cam kết với khách hàng.
+                </p>
+              </div>
+            </div>
+            <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
+              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12"></span>
+              <div>
+                <h3 className="font-medium md:mb-2 md:text-lg">
+                  Tư vấn hỗ trợ tận tâm
+                  <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
+                </h3>
+                <p className="text-sm text-muted-foreground md:text-base">
+                  Luôn sẵn sàng hỗ trợ và tư vấn khách hàng từ bước lên ý tưởng
+                  đến khi vận hành. Giải đáp các thắc mắc và bảo trì.
+                </p>
+              </div>
+            </div>
+            <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
+              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12"></span>
+              <div>
+                <h3 className="font-medium md:mb-2 md:text-lg">
+                  Bảo mật thông tin
+                  <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
+                </h3>
+                <p className="text-sm text-muted-foreground md:text-base">
+                  Horizo cam kết bảo mật mọi thông tin của khách hàng, từ ý
+                  tưởng đến dữ liệu, đảm bảo tính bảo mật và riêng tư tuyệt đối
+                  trong quá trình hợp tác
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* PROCESS SECTION */}
       <div id="process" className="md:flex gap-5 w-[80%] mx-auto py-12">
         <div className="md:w-[40%] mb-10 md:mb-0">
           <div className="size-full max-w-lg items-center justify-center overflow-hidden">
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-              <p className="text-[3.5rem] font-semibold">
-              Our Process
-              </p>
+              <p className="text-[3.5rem] font-semibold">Our Process</p>
             </BoxReveal>
 
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
@@ -630,8 +721,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/* PROCESS SECTION */}
-      <div className="md:flex gap-5 w-[80%] mx-auto py-20">
+
+      {/* GUARANTEE SECTION */}
+      {/* <div className="md:flex gap-5 w-[80%] mx-auto py-20">
         <div className="md:w-[40%] mb-10 md:mb-0">
           <div className="size-full max-w-lg items-center justify-center overflow-hidden">
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
@@ -691,7 +783,7 @@ export default function Home() {
             </AccordionItem>
           </Accordion>
         </div>
-      </div>
+      </div> */}
 
       {/* FOOTER */}
       <footer className="bg-white dark:bg-black mt-12">
