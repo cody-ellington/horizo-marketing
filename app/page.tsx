@@ -432,7 +432,7 @@ export default function Home() {
           }
         >
           <div className="w-full rounded-3xl">
-            <div className="bg-white text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
+            <div className="bg-white h-full text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
               <Image
                 src={"/images/services1.png"}
                 alt="Logo"
@@ -464,7 +464,7 @@ export default function Home() {
           </div>
 
           <div className="w-full rounded-3xl">
-            <div className="bg-white text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
+            <div className="bg-white h-full text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
               <Image
                 src={"/images/services2.png"}
                 alt="Logo"
@@ -496,7 +496,7 @@ export default function Home() {
           </div>
 
           <div className="w-full rounded-3xl">
-            <div className="bg-white text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
+            <div className="bg-white h-full text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
               <Image
                 src={"/images/services3.png"}
                 alt="Logo"
