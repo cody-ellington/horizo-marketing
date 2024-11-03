@@ -5,24 +5,45 @@ import Link from "next/link";
 const works = [
   {
     background: "bg-gray-100",
-    imageUrl: "/images/shopify1.webp",
-    title: "F&B - Expanse",
-    subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "https://themes.shopify.com/themes/expanse/styles/contemporary/preview",
+    imageUrl: "/project/beauty1.webp",
+    title: "Sahara",
+    subTitle: "Breathtaking visual treat that redefines the standards of online store",
+    link: "https://themes.shopify.com/themes/sahara/styles/cosmetics/preview",
   },
   {
     background: "bg-gray-100",
-    imageUrl: "/images/shopify2.webp",
-    title: "F&B - Combine",
-    subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "https://themes.shopify.com/themes/combine/styles/restaurant/preview",
+    imageUrl: "/project/beauty2.webp",
+    title: "Honey",
+    subTitle: "A highly flexible, quick set-up theme made for precious products.",
+    link: "https://themes.shopify.com/themes/honey/styles/maravella/preview",
   },
   {
     background: "bg-gray-100",
-    imageUrl: "/images/shopify3.webp",
-    title: "F&B - Flow",
-    subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "https://themes.shopify.com/themes/flow/styles/nourish/preview",
+    imageUrl: "/project/beauty3.webp",
+    title: "Mono",
+    subTitle: "The SEO-optimized shopify theme for a flawless e-commerce experience",
+    link: "https://themes.shopify.com/themes/mono/styles/vanilla/preview",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/beauty4.webp",
+    title: "Expanse",
+    subTitle: "A clean, versatile theme for large inventories",
+    link: "https://themes.shopify.com/themes/expanse/styles/modern/preview",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/beauty5.webp",
+    title: "Gem",
+    subTitle: "Shine online with this meticulously crafted theme for jewelry brands.",
+    link: "https://themes.shopify.com/themes/gem/styles/obsidian/preview",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/beauty6.webp",
+    title: "Pipeline",
+    subTitle: "A fashionable, feature rich theme designed for luxury brands",
+    link: "https://themes.shopify.com/themes/pipeline/styles/bright/preview",
   }
 ];
 

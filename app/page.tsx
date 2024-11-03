@@ -41,6 +41,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Meteors from "@/components/ui/meteors";
+import IconCloud from "@/components/ui/icon-cloud";
+import { NeonGradientCard } from "@/components/ui/neon-gradient-card";
 
 // MAP CIRCLES
 const slugs = [
@@ -325,8 +327,29 @@ export default function Home() {
         />
       </div> */}
 
-      <ShineBorder
-        className="relative flex h-[450px] w-[80%] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg border bg-[url('/images/story.png')] bg-cover md:shadow-xl"
+      <NeonGradientCard className="flex flex-col place-items-center w-[80%] h-fit mx-auto items-center justify-center text-center bg-[url('/images/space.avif')]">
+        <ShineBorder
+          className="relative flex h-[70vh] md:h-[500px] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg border bg-[url('/images/space.avif')] bg-cover md:shadow-xl"
+          color={["#3b3b3b", "#1c1b1b", "#170b03"]}
+        >
+          <span className="pointer-events-none py-2 whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-3xl md:text-5xl font-semibold leading-none text-transparent dark:from-[#fece8f] dark:to-[#00d9ff00]">
+            OUR STORY
+          </span>
+          <span className="text-center text-sm dark:text-white/70 w-[80%] md:w-[45%] mt-3">
+            Horizo được lấy cảm hứng từ “Horizon” (đường chân trời). Đường chân
+            trời luôn di chuyển khi ta tiến lên và dù đi xa đến đâu, ta vẫn luôn
+            có thể tiến xa hơn, tìm kiếm những ‘chân trời” mới cho riêng mình.
+            <br></br>
+            <br></br>
+            Ra đời với sự tâm huyết và kinh nghiệm trong lĩnh vực về website &
+            content marketing, Horizo sẽ giúp bạn xây dựng thương hiệu vững mạnh
+            hơn trong thị trường trực tuyến đầy cạnh tranh như hiện nay.
+          </span>
+        </ShineBorder>
+      </NeonGradientCard>
+
+      {/* <ShineBorder
+        className="relative flex h-[450px] w-[80%] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg border bg-[url('/images/space.avif')] bg-cover md:shadow-xl"
         color={["#546eff", "#8feffe", "#7bffd7"]}
       >
         <span className="pointer-events-none py-2 whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-[#fece8f] dark:to-[#00d9ff00]">
@@ -342,31 +365,31 @@ export default function Home() {
           content marketing, Horizo sẽ giúp bạn xây dựng thương hiệu vững mạnh
           hơn trong thị trường trực tuyến đầy cạnh tranh như hiện nay.
         </span>
-      </ShineBorder>
+      </ShineBorder> */}
 
       {/* CORE VALUES SECTION */}
       <div
         className={
-          "flex h-fit w-[80%] mx-auto flex-col gap-6 lg:h-[250px] lg:flex-row my-10"
+          "flex h-[300px] md:h-fit w-[80%] mx-auto flex-col gap-6 lg:h-[250px] lg:flex-row my-10"
         }
       >
         <MagicCard
           className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl md:w-[30%]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
-          CHÍNH TRỰC
+          <span className=" bg-gradient-to-b font-semibold leading-none text-transparent dark:from-[#8fd3fe] dark:to-[#00d9ff00] bg-clip-text">CHÍNH TRỰC</span>
         </MagicCard>
         <MagicCard
           className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl md:w-[40%]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
-          TRÁCH NHIỆM
+          <span className=" bg-gradient-to-b font-semibold leading-none text-transparent dark:from-[#8fd3fe] dark:to-[#00d9ff00] bg-clip-text">TRÁCH NHIỆM</span>
         </MagicCard>
         <MagicCard
           className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl md:w-[30%]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
-          XỨNG ĐÁNG
+          <span className=" bg-gradient-to-b font-semibold leading-none text-transparent dark:from-[#8fd3fe] dark:to-[#00d9ff00] bg-clip-text">XỨNG ĐÁNG</span>
         </MagicCard>
       </div>
 
@@ -411,7 +434,7 @@ export default function Home() {
           <div className="w-full rounded-3xl">
             <div className="bg-white text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
               <Image
-                src={"/images/ecom.png"}
+                src={"/images/services1.png"}
                 alt="Logo"
                 width={1000}
                 height={1000}
@@ -443,7 +466,7 @@ export default function Home() {
           <div className="w-full rounded-3xl">
             <div className="bg-white text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
               <Image
-                src={"/images/web.png"}
+                src={"/images/services2.png"}
                 alt="Logo"
                 width={1000}
                 height={1000}
@@ -475,7 +498,7 @@ export default function Home() {
           <div className="w-full rounded-3xl">
             <div className="bg-white text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
               <Image
-                src={"/images/mkt.png"}
+                src={"/images/services3.png"}
                 alt="Logo"
                 width={1000}
                 height={1000}
@@ -504,6 +527,13 @@ export default function Home() {
 
         <RetroGrid />
       </div>
+
+      {/* TECH STACK SECTION */}
+      {/* <section>
+        <div className="relative flex size-full w-[100%] items-center justify-center overflow-hidden rounded-lg bg-background px-20 pb-20 pt-8 ">
+          <IconCloud iconSlugs={slugs} />
+        </div>
+      </section> */}
 
       {/* PROJECT SECTION */}
       <section id="photos" className="py-14 w-[80%] mx-auto">
@@ -551,13 +581,13 @@ export default function Home() {
       {/* GUARANTEE #2 SECTION */}
       <section className="py-32 md:w-[80%] mx-auto">
         <div className="container">
-          <p className="mb-4 text-xs text-muted-foreground">GUARANTEE</p>
-          <h2 className="text-3xl font-medium lg:text-5xl">
-            A better way to build websites
-          </h2>
+          <p className="mb-4 text-xs text-muted-foreground">Horizo Marketing</p>
+          <h2 className="text-3xl font-medium lg:text-5xl">Our Guarantees</h2>
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:mt-20 lg:grid-cols-5">
             <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
-              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12"></span>
+              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
+                1
+              </span>
               <div>
                 <h3 className="font-medium md:mb-2 md:text-lg">
                   Chất lượng hàng đầu
@@ -570,7 +600,9 @@ export default function Home() {
               </div>
             </div>
             <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
-              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12"></span>
+              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
+                2
+              </span>
               <div>
                 <h3 className="font-medium md:mb-2 md:text-lg">
                   Chính trực trong hợp tác
@@ -583,7 +615,9 @@ export default function Home() {
               </div>
             </div>
             <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
-              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12"></span>
+              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
+                3
+              </span>
               <div>
                 <h3 className="font-medium md:mb-2 md:text-lg">
                   Tiến độ đúng hẹn
@@ -596,7 +630,9 @@ export default function Home() {
               </div>
             </div>
             <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
-              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12"></span>
+              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
+                4
+              </span>
               <div>
                 <h3 className="font-medium md:mb-2 md:text-lg">
                   Tư vấn hỗ trợ tận tâm
@@ -609,7 +645,9 @@ export default function Home() {
               </div>
             </div>
             <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
-              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12"></span>
+              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
+                5
+              </span>
               <div>
                 <h3 className="font-medium md:mb-2 md:text-lg">
                   Bảo mật thông tin
@@ -720,7 +758,6 @@ export default function Home() {
           </Accordion>
         </div>
       </div>
-
 
       {/* GUARANTEE SECTION */}
       {/* <div className="md:flex gap-5 w-[80%] mx-auto py-20">
