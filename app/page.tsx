@@ -587,12 +587,11 @@ export default function Home() {
       <section className="py-32 w-[80%] mx-auto">
         <div className="container">
           <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-            <p className="text-[3.5rem] font-semibold">Our Guarantees</p>
+            <p className="text-[3.5rem] font-bold">Our Guarantees</p>
           </BoxReveal>
           <BoxReveal boxColor={"#ffffff"} duration={0.5}>
             <h2 className="mt-[.9rem] text-[1rem]">
-              Bắt đầu xây dựng website mang đậm nét riêng cho thương hiệu của
-              bạn cùng Horizo.{" "}
+              Vì sao các khách hàng tin tưởng vào Horizo?
             </h2>
           </BoxReveal>
           {/* <p className="mb-4 text-xs text-muted-foreground">Vì sao các khách hàng tin tưởng vào Horizo?</p> */}
@@ -682,7 +681,7 @@ export default function Home() {
         <div className="md:w-[40%] mb-10 md:mb-0">
           <div className="size-full max-w-lg items-center justify-center overflow-hidden">
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-              <p className="text-[3.5rem] font-semibold">Our Process</p>
+              <p className="text-[3.5rem] font-bold">Our Process</p>
             </BoxReveal>
 
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
