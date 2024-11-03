@@ -579,7 +579,7 @@ export default function Home() {
         </Tabs>
       </section>
       {/* GUARANTEE #2 SECTION */}
-      <section className="py-32 md:w-[80%] mx-auto">
+      <section className="py-32 w-[80%] mx-auto">
         <div className="container">
           <p className="mb-4 text-xs text-muted-foreground">Horizo Marketing</p>
           <h2 className="text-3xl font-medium lg:text-5xl">Our Guarantees</h2>
