@@ -707,15 +707,20 @@ export default function Home() {
                 Trao đổi & xác định nhu cầu
               </AccordionTrigger>
               <AccordionContent>
-                Mục tiêu: Lắng nghe, thấu hiểu mong muốn và kỳ vọng của bạn về
-                giao diện website, đối tượng khách hàng và phong cách thương
-                hiệu.
-                <br></br>
-                <br></br>
-                Phân tích: Bằng cách điền chi tiết bảng khảo sát từ Horizo, cả
-                bạn và team Horizo sẽ xác định được cụ thể các tính năng cần
-                thiết và mục đích sử dụng website, giúp nắm rõ yêu cầu và đưa ra
-                đề xuất phù hợp.
+                <ul className="list-disc">
+                  <li>
+                    • Mục tiêu: Lắng nghe, thấu hiểu mong muốn và kỳ vọng của
+                    bạn về giao diện website, đối tượng khách hàng và phong cách
+                    thương hiệu.
+                  </li>
+                  <br />
+                  <li>
+                    • Phân tích: Bằng cách điền chi tiết bảng khảo sát từ
+                    Horizo, cả bạn và team Horizo sẽ xác định được cụ thể các
+                    tính năng cần thiết và mục đích sử dụng website, giúp nắm rõ
+                    yêu cầu và đưa ra đề xuất phù hợp.
+                  </li>
+                </ul>
               </AccordionContent>
             </AccordionItem>
 
@@ -724,14 +729,13 @@ export default function Home() {
                 Lựa chọn giải pháp phù hợp
               </AccordionTrigger>
               <AccordionContent>
-                Dựa trên nhu cầu đã xác định, Horizo sẽ gợi ý các giải pháp phù
-                hợp về nền tảng, giao diện và tính năng nhằm tối ưu hóa trải
+                • Dựa trên nhu cầu đã xác định, Horizo sẽ gợi ý các giải pháp
+                phù hợp về nền tảng, giao diện và tính năng nhằm tối ưu hóa trải
                 nghiệm người dùng và đạt hiệu quả cho mục đích làm website của
                 bạn.
                 <br></br>
-                <br></br>
-                Đề xuất chi phí và thời gian dự kiến hoàn thành để giúp bạn hình
-                dung được bao quát dự án{" "}
+                <br></br>• Đề xuất chi phí và thời gian dự kiến hoàn thành để
+                giúp bạn hình dung được bao quát dự án{" "}
               </AccordionContent>
             </AccordionItem>
 
@@ -740,14 +744,13 @@ export default function Home() {
                 Thỏa thuận
               </AccordionTrigger>
               <AccordionContent>
-                Lập hợp đồng dịch vụ gồm phạm vi công việc, yêu cầu kỹ thuật,
+                • Lập hợp đồng dịch vụ gồm phạm vi công việc, yêu cầu kỹ thuật,
                 thời gian hoàn thành và các điều khoản liên quan để bảo vệ quyền
                 lợi của cả hai bên.
                 <br></br>
-                <br></br>
-                Chốt các điều khoản thanh toán: Thỏa thuận về chi phí, phương
-                thức thanh toán và lịch thanh toán rõ ràng trước khi bắt đầu
-                triển khai
+                <br></br>• Chốt các điều khoản thanh toán: Thỏa thuận về chi
+                phí, phương thức thanh toán và lịch thanh toán rõ ràng trước khi
+                bắt đầu triển khai
               </AccordionContent>
             </AccordionItem>
 
@@ -756,14 +759,13 @@ export default function Home() {
                 Triển khai chi tiết
               </AccordionTrigger>
               <AccordionContent>
-                Team Horizo tiến hành lên sitemap, layout gửi bản demo để khách
-                hàng duyệt và phản hồi. Sau khi thống nhất sẽ tiến hành thiết kế
-                phần code.
+                • Team Horizo tiến hành lên sitemap, layout gửi bản demo để
+                khách hàng duyệt và phản hồi. Sau khi thống nhất sẽ tiến hành
+                thiết kế phần code.
                 <br></br>
-                <br></br>
-                Sau khi phát triển xong, website được kiểm tra kỹ càng để đảm
-                bảo hoạt động trơn tru trên các thiết bị, tối ưu hóa hiệu suất
-                và bảo mật
+                <br></br>• Sau khi phát triển xong, website được kiểm tra kỹ
+                càng để đảm bảo hoạt động trơn tru trên các thiết bị, tối ưu hóa
+                hiệu suất và bảo mật
               </AccordionContent>
             </AccordionItem>
 
@@ -772,7 +774,7 @@ export default function Home() {
                 Bàn giao và hướng dẫn quản trị
               </AccordionTrigger>
               <AccordionContent>
-                Khi website hoàn tất và đạt yêu cầu, Horizo sẽ bàn giao quyền
+                • Khi website hoàn tất và đạt yêu cầu, Horizo sẽ bàn giao quyền
                 truy cập, hướng dẫn và các thông tin quản lý cho khách hàng.
               </AccordionContent>
             </AccordionItem>
