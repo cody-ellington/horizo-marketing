@@ -377,19 +377,25 @@ export default function Home() {
           className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl md:w-[30%]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
-          <span className=" bg-gradient-to-b font-semibold leading-none text-transparent dark:from-[#8fd3fe] dark:to-[#00d9ff00] bg-clip-text">CHÍNH TRỰC</span>
+          <span className=" bg-gradient-to-b font-semibold leading-none text-transparent dark:from-[#8fd3fe] dark:to-[#00d9ff00] bg-clip-text">
+            CHÍNH TRỰC
+          </span>
         </MagicCard>
         <MagicCard
           className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl md:w-[40%]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
-          <span className=" bg-gradient-to-b font-semibold leading-none text-transparent dark:from-[#8fd3fe] dark:to-[#00d9ff00] bg-clip-text">TRÁCH NHIỆM</span>
+          <span className=" bg-gradient-to-b font-semibold leading-none text-transparent dark:from-[#8fd3fe] dark:to-[#00d9ff00] bg-clip-text">
+            TRÁCH NHIỆM
+          </span>
         </MagicCard>
         <MagicCard
           className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-2xl md:w-[30%]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
-          <span className=" bg-gradient-to-b font-semibold leading-none text-transparent dark:from-[#8fd3fe] dark:to-[#00d9ff00] bg-clip-text">XỨNG ĐÁNG</span>
+          <span className=" bg-gradient-to-b font-semibold leading-none text-transparent dark:from-[#8fd3fe] dark:to-[#00d9ff00] bg-clip-text">
+            XỨNG ĐÁNG
+          </span>
         </MagicCard>
       </div>
 
@@ -417,10 +423,9 @@ export default function Home() {
         id="service"
         className="relative flex h-fit w-full flex-col overflow-hidden rounded-lg bg-background md:shadow-xl"
       >
-        <GradualSpacing
-          className="mt-6 font-display text-center text-4xl font-bold -tracking-widest  text-black dark:text-white md:text-5xl md:leading-[5rem]"
-          text="OUR SERVICES"
-        />
+        <div className="text-center mt-10">
+          <SparklesText text="Our Service" />
+        </div>
         <HyperText
           className="text-xl text-center font-bold text-black dark:text-white"
           text="Horizo"
@@ -581,9 +586,17 @@ export default function Home() {
       {/* GUARANTEE #2 SECTION */}
       <section className="py-32 w-[80%] mx-auto">
         <div className="container">
-          <p className="mb-4 text-xs text-muted-foreground">Horizo Marketing</p>
-          <h2 className="text-3xl font-medium lg:text-5xl">Our Guarantees</h2>
-          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:mt-20 lg:grid-cols-5">
+          <BoxReveal boxColor={"#ffffff"} duration={0.5}>
+            <p className="text-[3.5rem] font-semibold">Our Guarantees</p>
+          </BoxReveal>
+          <BoxReveal boxColor={"#ffffff"} duration={0.5}>
+            <h2 className="mt-[.9rem] text-[1rem]">
+              Bắt đầu xây dựng website mang đậm nét riêng cho thương hiệu của
+              bạn cùng Horizo.{" "}
+            </h2>
+          </BoxReveal>
+          {/* <p className="mb-4 text-xs text-muted-foreground">Vì sao các khách hàng tin tưởng vào Horizo?</p> */}
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
             <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
               <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
                 1
@@ -690,7 +703,9 @@ export default function Home() {
 
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Trao đổi & xác định nhu cầu</AccordionTrigger>
+              <AccordionTrigger className="text-lg">
+                Trao đổi & xác định nhu cầu
+              </AccordionTrigger>
               <AccordionContent>
                 Mục tiêu: Lắng nghe, thấu hiểu mong muốn và kỳ vọng của bạn về
                 giao diện website, đối tượng khách hàng và phong cách thương
@@ -705,7 +720,9 @@ export default function Home() {
             </AccordionItem>
 
             <AccordionItem value="item-2">
-              <AccordionTrigger>Lựa chọn giải pháp phù hợp</AccordionTrigger>
+              <AccordionTrigger className="text-lg">
+                Lựa chọn giải pháp phù hợp
+              </AccordionTrigger>
               <AccordionContent>
                 Dựa trên nhu cầu đã xác định, Horizo sẽ gợi ý các giải pháp phù
                 hợp về nền tảng, giao diện và tính năng nhằm tối ưu hóa trải
@@ -719,7 +736,9 @@ export default function Home() {
             </AccordionItem>
 
             <AccordionItem value="item-3">
-              <AccordionTrigger>Thỏa thuận</AccordionTrigger>
+              <AccordionTrigger className="text-lg">
+                Thỏa thuận
+              </AccordionTrigger>
               <AccordionContent>
                 Lập hợp đồng dịch vụ gồm phạm vi công việc, yêu cầu kỹ thuật,
                 thời gian hoàn thành và các điều khoản liên quan để bảo vệ quyền
@@ -733,7 +752,9 @@ export default function Home() {
             </AccordionItem>
 
             <AccordionItem value="item-4">
-              <AccordionTrigger>Triển khai chi tiết</AccordionTrigger>
+              <AccordionTrigger className="text-lg">
+                Triển khai chi tiết
+              </AccordionTrigger>
               <AccordionContent>
                 Team Horizo tiến hành lên sitemap, layout gửi bản demo để khách
                 hàng duyệt và phản hồi. Sau khi thống nhất sẽ tiến hành thiết kế
@@ -747,7 +768,7 @@ export default function Home() {
             </AccordionItem>
 
             <AccordionItem value="item-5">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-lg">
                 Bàn giao và hướng dẫn quản trị
               </AccordionTrigger>
               <AccordionContent>
