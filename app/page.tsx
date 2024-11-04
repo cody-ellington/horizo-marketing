@@ -329,7 +329,7 @@ export default function Home() {
 
       <NeonGradientCard className="flex flex-col place-items-center w-[80%] h-fit mx-auto items-center justify-center text-center bg-[url('/images/space.avif')]">
         <ShineBorder
-          className="relative flex h-[70vh] md:h-[500px] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg border bg-[url('/images/space.avif')] bg-cover md:shadow-xl"
+          className="relative flex h-[70vh] md:h-[400px] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg border bg-[url('/images/space.avif')] bg-cover md:shadow-xl"
           color={["#3b3b3b", "#1c1b1b", "#170b03"]}
         >
           <span className="pointer-events-none py-2 whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-3xl md:text-5xl font-semibold leading-none text-transparent dark:from-[#fece8f] dark:to-[#00d9ff00]">
