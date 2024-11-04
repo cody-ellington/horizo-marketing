@@ -43,6 +43,7 @@ import {
 import Meteors from "@/components/ui/meteors";
 import IconCloud from "@/components/ui/icon-cloud";
 import { NeonGradientCard } from "@/components/ui/neon-gradient-card";
+import TypingAnimation from "@/components/ui/typing-animation";
 
 // MAP CIRCLES
 const slugs = [
@@ -445,10 +446,11 @@ export default function Home() {
                 height={1000}
                 className="w-full"
               />
-              <div className="p-4 space-y-2">
-                <h3 className="text-2xl font-semibold uppercase mb-5">
-                  E-Commerce Website
-                </h3>
+              <div className="p-4 space-y-4">
+                <TypingAnimation
+                  className="text-3xl font-bold text-black dark:text-white"
+                  text="E-Commerce Website"
+                />
                 <p className="text-gray-500 dark:text-gray-200">
                   Thiết kế giao diện website UX UI
                 </p>
@@ -477,10 +479,11 @@ export default function Home() {
                 height={1000}
                 className="w-full"
               />
-              <div className="p-4 space-y-2">
-                <h3 className="text-2xl font-semibold uppercase mb-5">
-                  Branding Website
-                </h3>
+              <div className="p-4 space-y-4">
+              <TypingAnimation
+                  className="text-3xl font-bold text-black dark:text-white"
+                  text="Branding Website"
+                />
                 <p className="text-gray-500 dark:text-gray-200">
                   Thiết kế giao diện website UX UI
                 </p>
@@ -509,10 +512,11 @@ export default function Home() {
                 height={1000}
                 className="w-full"
               />
-              <div className="p-4 space-y-2">
-                <h3 className="text-2xl font-semibold uppercase mb-5">
-                  Content Marketing
-                </h3>
+              <div className="p-4 space-y-4">
+              <TypingAnimation
+                  className="text-3xl font-bold text-black dark:text-white"
+                  text="Content Marketing"
+                />
                 <p className="text-gray-500 dark:text-gray-200">
                   Social Media Content
                 </p>
@@ -848,15 +852,27 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
-              <button className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40">
+              <a
+                href=""
+                target="_blank"
+                className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40"
+              >
                 <span className="mx-1">Contact Us</span>
-              </button>
-              <button className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40">
+              </a>
+              <a
+                href="https://www.behance.net/horizomarketing"
+                target="_blank"
+                className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40"
+              >
                 <span className="mx-1">Behance</span>
-              </button>
-              <button className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40">
+              </a>
+              <a
+                href="https://www.facebook.com/horizo.marketing"
+                target="_blank"
+                className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40"
+              >
                 <span className="mx-1">Facebook</span>
-              </button>
+              </a>
             </div>
           </div>
 
