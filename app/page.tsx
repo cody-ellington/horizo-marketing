@@ -400,12 +400,12 @@ export default function Home() {
       </div>
 
       {/* TESTIMONIAL */}
-      <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
-        <Marquee pauseOnHover className="[--duration:20s]">
+      <div className="relative flex h-[400px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+        {/* <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
           ))}
-        </Marquee>
+        </Marquee> */}
         <Marquee reverse pauseOnHover className="[--duration:20s]">
           {secondRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
