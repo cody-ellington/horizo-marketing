@@ -595,7 +595,7 @@ export default function Home() {
             </h2>
           </BoxReveal>
           {/* <p className="mb-4 text-xs text-muted-foreground">Vì sao các khách hàng tin tưởng vào Horizo?</p> */}
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
               <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
                 1
@@ -644,21 +644,6 @@ export default function Home() {
             <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
               <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
                 4
-              </span>
-              <div>
-                <h3 className="font-medium md:mb-2 md:text-lg">
-                  Tư vấn hỗ trợ tận tâm
-                  <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
-                </h3>
-                <p className="text-sm text-muted-foreground md:text-base">
-                  Luôn sẵn sàng hỗ trợ và tư vấn khách hàng từ bước lên ý tưởng
-                  đến khi vận hành. Giải đáp các thắc mắc và bảo trì.
-                </p>
-              </div>
-            </div>
-            <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
-              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
-                5
               </span>
               <div>
                 <h3 className="font-medium md:mb-2 md:text-lg">
