@@ -21,22 +21,40 @@ const works = [
     background: "bg-gray-100",
     imageUrl: "/project/shopify3.webp",
     title: "Flow",
-    subTitle: "Unlock the power of image-focused design and super flexible layouts",
+    subTitle:
+      "Unlock the power of image-focused design and super flexible layouts",
     link: "https://themes.shopify.com/themes/flow/styles/nourish/preview",
   },
   {
     background: "bg-gray-100",
     imageUrl: "/project/shopify4.webp",
     title: "Modular",
-    subTitle: "Fun, lively design and elegant animations to entice your customers",
+    subTitle:
+      "Fun, lively design and elegant animations to entice your customers",
     link: "https://themes.shopify.com/themes/modular/styles/mayfair/preview",
   },
   {
     background: "bg-gray-100",
     imageUrl: "/project/shopify5.webp",
     title: "Viola",
-    subTitle: "Design theme with amazing visuals for an unforgettable user experience",
+    subTitle:
+      "Design theme with amazing visuals for an unforgettable user experience",
     link: "https://themes.shopify.com/themes/viola/styles/pure/preview",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/shopify6.webp",
+    title: "Sydney",
+    subTitle:
+      "Supercharged with stunning designs and tools to incentivize sales.",
+    link: "https://themes.shopify.com/themes/sydney/styles/refined/preview",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/shopify7.webp",
+    title: "Crave",
+    subTitle: "An eye-catching theme optimized for shopping on the go.",
+    link: "https://themes.shopify.com/themes/crave/styles/default/preview",
   },
 ];
 

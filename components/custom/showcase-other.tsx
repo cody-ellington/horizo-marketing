@@ -5,18 +5,61 @@ import Link from "next/link";
 const works = [
   {
     background: "bg-gray-100",
-    imageUrl: "/images/shopify1.webp",
-    title: "F&B - Expanse",
-    subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "https://themes.shopify.com/themes/expanse/styles/contemporary/preview",
+    imageUrl: "/project/other1.webp",
+    title: "Shapes",
+    subTitle: "Move products fast with clever Shapes.",
+    link: "https://themes.shopify.com/themes/shapes/styles/playful/preview",
   },
   {
     background: "bg-gray-100",
-    imageUrl: "/images/shopify2.webp",
-    title: "F&B - Combine",
-    subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "https://themes.shopify.com/themes/combine/styles/restaurant/preview",
+    imageUrl: "/project/other2.webp",
+    title: "Label",
+    subTitle: "A theme for labels. No matter if yours is on cotton or vinyl.",
+    link: "https://themes.shopify.com/themes/label/styles/music/preview",
   },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/other3.webp",
+    title: "Toyo",
+    subTitle: "Great flr Kids wear, Children's Fashion, Toys, Pets, Kids, Baby, Books",
+    link: "https://themes.shopify.com/themes/toyo/styles/kids-and-baby/preview",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/other4.webp",
+    title: "Symmetry",
+    subTitle: "Versatile, fashionable, professional theme with premium features.",
+    link: "https://themes.shopify.com/themes/symmetry/styles/duke/preview",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/other5.webp",
+    title: "Alchemy",
+    subTitle: "Fast, modern, easy set-up. Designed to best showcase your products!",
+    link: "https://themes.shopify.com/themes/alchemy/styles/sharp/preview",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/other6.webp",
+    title: "Pinnacle",
+    subTitle: "Accelerate sales and increase revenue with Pinnacle",
+    link: "https://themes.shopify.com/themes/pinnacle/styles/hardware/preview",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/other7.webp",
+    title: "Publisher",
+    subTitle: "An avant-garde theme inspired by independent studios and publishers.",
+    link: "https://themes.shopify.com/themes/publisher/styles/default/preview",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/other8.webp",
+    title: "Fashionopolism",
+    subTitle: "Fast and packed with features to help you sell more",
+    link: "https://themes.shopify.com/themes/fashionopolism/styles/galleria/preview",
+  },
+  
 ];
 
 export function ProjectShowcaseOther() {

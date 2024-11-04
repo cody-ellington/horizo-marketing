@@ -5,31 +5,59 @@ import Link from "next/link";
 const works = [
   {
     background: "bg-gray-100",
-    imageUrl: "/images/shopify1.webp",
-    title: "F&B - Expanse",
-    subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "https://themes.shopify.com/themes/expanse/styles/contemporary/preview",
+    imageUrl: "/project/branding1.jpeg",
+    title: "Fizens ",
+    subTitle: "Designed to help you create a sleek and fully functional website",
+    link: "https://fizens.webflow.io/home",
   },
   {
     background: "bg-gray-100",
-    imageUrl: "/images/shopify2.webp",
-    title: "F&B - Combine",
-    subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "https://themes.shopify.com/themes/combine/styles/restaurant/preview",
+    imageUrl: "/project/branding2.jpeg",
+    title: "Biznix ",
+    subTitle: "Tailored for Business, Agencies, Startups, and Consultancies websites",
+    link: "https://biznix-ttm.webflow.io/home1",
   },
   {
     background: "bg-gray-100",
-    imageUrl: "/images/shopify3.webp",
-    title: "F&B - Flow",
-    subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "https://themes.shopify.com/themes/flow/styles/nourish/preview",
+    imageUrl: "/project/branding3.jpeg",
+    title: "Nutriflow ",
+    subTitle: "Designed for nutritionists, health coaches, and wellness professionals",
+    link: "https://nutriflow-template.webflow.io/",
   },
   {
     background: "bg-gray-100",
-    imageUrl: "/images/shopify4.webp",
-    title: "F&B - Modular",
-    subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "https://themes.shopify.com/themes/modular/styles/mayfair/preview",
+    imageUrl: "/project/branding4.png",
+    title: "StrategiX ",
+    subTitle: "Boost your consulting firm’s online presence and attract more clients with our expertly designed",
+    link: "https://strategix-1c7afa.webflow.io/home-v1",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/branding5.jpeg",
+    title: "Evoluxe ",
+    subTitle: "Sleek, minimalistic template for small businesses. Easy to customize and fully responsive",
+    link: "https://evo-luxe.webflow.io/",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/branding6.jpeg",
+    title: "ADZEN ",
+    subTitle: "Vibrant, modern website template designed for marketing agencies.",
+    link: "https://adzen.webflow.io/",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/branding7.png",
+    title: "Constint ",
+    subTitle: "Designed with a contemporary look and customizable elements.",
+    link: "https://constint.webflow.io/",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/branding8.jpeg",
+    title: "BizCoach ",
+    subTitle: "Tailored for coaches, consultants, and mentors.",
+    link: "https://bizcoach.webflow.io/home-one",
   },
 ];
 
@@ -49,7 +77,7 @@ export function ProjectShowcaseBranding() {
                 height={10000}
                 width={10000}
                 className="
-                  h-3/4 w-full object-cover rounded-lg"
+                  h-3/5 w-full object-cover rounded-lg"
                 src={imageUrl}
                 alt={`Random stock image ${idx + 1}`}
               />

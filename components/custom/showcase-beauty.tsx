@@ -44,6 +44,20 @@ const works = [
     title: "Pipeline",
     subTitle: "A fashionable, feature rich theme designed for luxury brands",
     link: "https://themes.shopify.com/themes/pipeline/styles/bright/preview",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/beauty7.webp",
+    title: "Prestige",
+    subTitle: "Designed for premium, high-end brand appeal",
+    link: "https://themes.shopify.com/themes/prestige/styles/allure/preview",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/beauty8.webp",
+    title: "Flow",
+    subTitle: "Unlock the power of image-focused design and super flexible layouts",
+    link: "https://themes.shopify.com/themes/flow/styles/luxe/preview",
   }
 ];
 
