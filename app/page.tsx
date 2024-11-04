@@ -439,7 +439,7 @@ export default function Home() {
           <div className="w-full rounded-3xl">
             <div className="bg-white h-full text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
               <Image
-                src={"/images/services1.png"}
+                src={"/images/3d_ecom.png"}
                 alt="Logo"
                 width={1000}
                 height={1000}
@@ -471,7 +471,7 @@ export default function Home() {
           <div className="w-full rounded-3xl">
             <div className="bg-white h-full text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
               <Image
-                src={"/images/services2.png"}
+                src={"/images/3d_brand.png"}
                 alt="Logo"
                 width={1000}
                 height={1000}
@@ -503,7 +503,7 @@ export default function Home() {
           <div className="w-full rounded-3xl">
             <div className="bg-white h-full text-center rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl dark:bg-black">
               <Image
-                src={"/images/services3.png"}
+                src={"/images/3d_mkt.png"}
                 alt="Logo"
                 width={1000}
                 height={1000}
