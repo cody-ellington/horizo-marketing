@@ -304,8 +304,8 @@ export default function Home() {
           id="about"
           className="text-center md:text-lg dark:text-white/70 w-[80%] md:w-[40%] mt-3"
         >
-          Giải pháp sáng tạo giúp nâng cao “sự hiện diện” thương hiệu của bạn
-          trong kỷ nguyên số
+          Giải pháp sáng tạo về Website Design & Content Marketing giúp nâng cao
+          &quot;sự hiện diện&quot; cho thương hiệu của bạn trong kỷ nguyên số
         </span>
         <Particles
           className="absolute inset-0"
@@ -480,7 +480,7 @@ export default function Home() {
                 className="w-full"
               />
               <div className="p-4 space-y-4">
-              <TypingAnimation
+                <TypingAnimation
                   className="text-3xl font-bold text-black dark:text-white"
                   text="Branding Website"
                 />
@@ -513,7 +513,7 @@ export default function Home() {
                 className="w-full"
               />
               <div className="p-4 space-y-4">
-              <TypingAnimation
+                <TypingAnimation
                   className="text-3xl font-bold text-black dark:text-white"
                   text="Content Marketing"
                 />
