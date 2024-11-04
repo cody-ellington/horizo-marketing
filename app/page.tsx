@@ -449,7 +449,7 @@ export default function Home() {
               <div className="p-4 space-y-4">
                 <TypingAnimation
                   className="text-3xl font-bold text-black dark:text-white"
-                  text="E-Commerce Website"
+                  text="E-Comm Website"
                 />
                 <p className="text-gray-500 dark:text-gray-200">
                   Thiết kế giao diện website UX UI

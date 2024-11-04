@@ -78,7 +78,7 @@ export function ProjectShowcaseOther() {
                 height={10000}
                 width={10000}
                 className="
-                  h-3/4 w-full object-cover rounded-lg"
+                  h-fit w-full object-cover rounded-lg"
                 src={imageUrl}
                 alt={`Random stock image ${idx + 1}`}
               />
