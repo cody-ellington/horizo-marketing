@@ -84,7 +84,7 @@ export function ProjectShowcaseBeauty() {
               <h3 className="text-lg font-semibold mt-3 text-center">
                 {title}
               </h3>
-              <div className=" text-center text-gray-500">{subTitle}</div>
+              <div className=" text-center text-sm text-gray-500">{subTitle}</div>
             </Link>
           </BlurFade>
         ))}

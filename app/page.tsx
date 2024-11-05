@@ -587,83 +587,89 @@ export default function Home() {
           </TabsContent>
         </Tabs>
       </section>
-      {/* GUARANTEE #2 SECTION */}
-      <section className="py-32 w-[80%] mx-auto">
-        <div className="container">
-          <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-            <p className="text-[3.5rem] font-bold">Our Guarantees</p>
-          </BoxReveal>
-          <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-            <h2 className="mt-[.9rem] text-[1rem]">
-              Vì sao các khách hàng tin tưởng vào Horizo?
-            </h2>
-          </BoxReveal>
-          {/* <p className="mb-4 text-xs text-muted-foreground">Vì sao các khách hàng tin tưởng vào Horizo?</p> */}
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
-              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
-                1
-              </span>
-              <div>
-                <h3 className="font-medium md:mb-2 md:text-lg">
-                  Chất lượng hàng đầu
-                  <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
-                </h3>
-                <p className="text-sm text-muted-foreground md:text-base">
-                  Cam kết mang đến giải pháp về website chất lượng cao, đảm bảo
-                  giao diện phù hợp, tối ưu hóa trải nghiệm người dùng.
-                </p>
-              </div>
-            </div>
-            <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
-              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
-                2
-              </span>
-              <div>
-                <h3 className="font-medium md:mb-2 md:text-lg">
-                  Chính trực trong hợp tác
-                  <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
-                </h3>
-                <p className="text-sm text-muted-foreground md:text-base">
-                  Sự chính trực khi tư vấn và hợp tác luôn là kim chỉ nam của
-                  Horizo từ ngày đầu thành lập để cùng tạo nên kết quả WIN-WIN.
-                </p>
-              </div>
-            </div>
-            <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
-              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
-                3
-              </span>
-              <div>
-                <h3 className="font-medium md:mb-2 md:text-lg">
-                  Tiến độ đúng hẹn
-                  <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
-                </h3>
-                <p className="text-sm text-muted-foreground md:text-base">
-                  Làm việc theo lịch trình cụ thể và rõ ràng, luôn đảm bảo hoàn
-                  thành dự án đúng thời hạn đã cam kết với khách hàng.
-                </p>
-              </div>
-            </div>
-            <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
-              <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
-                4
-              </span>
-              <div>
-                <h3 className="font-medium md:mb-2 md:text-lg">
-                  Bảo mật thông tin
-                  <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
-                </h3>
-                <p className="text-sm text-muted-foreground md:text-base">
-                  Horizo cam kết bảo mật mọi thông tin của khách hàng, từ ý
-                  tưởng đến dữ liệu, đảm bảo tính bảo mật và riêng tư tuyệt đối
-                  trong quá trình hợp tác
-                </p>
+
+      {/* GUARANTEE SECTION */}
+
+      <div className="relative flex h-fit w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+        <Meteors number={30} />
+          <div className="py-16 w-[80%] mx-auto">
+            <div className="container">
+              <BoxReveal boxColor={"#ffffff"} duration={0.5}>
+                <p className="text-[3.5rem] font-bold">Our Guarantees</p>
+              </BoxReveal>
+              <BoxReveal boxColor={"#ffffff"} duration={0.5}>
+                <h2 className="mt-[.9rem] text-[1rem]">
+                  Vì sao các khách hàng tin tưởng vào Horizo?
+                </h2>
+              </BoxReveal>
+              {/* <p className="mb-4 text-xs text-muted-foreground">Vì sao các khách hàng tin tưởng vào Horizo?</p> */}
+              <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
+                  <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
+                    1
+                  </span>
+                  <div>
+                    <h3 className="font-medium md:mb-2 md:text-lg">
+                      Chất lượng hàng đầu
+                      <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
+                    </h3>
+                    <p className="text-sm text-muted-foreground md:text-base">
+                      Cam kết mang đến giải pháp về website chất lượng cao, đảm
+                      bảo giao diện phù hợp, tối ưu hóa trải nghiệm người dùng.
+                    </p>
+                  </div>
+                </div>
+                <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
+                  <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
+                    2
+                  </span>
+                  <div>
+                    <h3 className="font-medium md:mb-2 md:text-lg">
+                      Chính trực trong hợp tác
+                      <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
+                    </h3>
+                    <p className="text-sm text-muted-foreground md:text-base">
+                      Sự chính trực khi tư vấn và hợp tác luôn là kim chỉ nam
+                      của Horizo từ ngày đầu thành lập để cùng tạo nên kết quả
+                      WIN-WIN.
+                    </p>
+                  </div>
+                </div>
+                <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
+                  <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
+                    3
+                  </span>
+                  <div>
+                    <h3 className="font-medium md:mb-2 md:text-lg">
+                      Tiến độ đúng hẹn
+                      <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
+                    </h3>
+                    <p className="text-sm text-muted-foreground md:text-base">
+                      Làm việc theo lịch trình cụ thể và rõ ràng, luôn đảm bảo
+                      hoàn thành dự án đúng thời hạn đã cam kết với khách hàng.
+                    </p>
+                  </div>
+                </div>
+                <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">
+                  <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12">
+                    4
+                  </span>
+                  <div>
+                    <h3 className="font-medium md:mb-2 md:text-lg">
+                      Bảo mật thông tin
+                      <span className="absolute -left-px hidden h-6 w-px bg-primary md:inline-block"></span>
+                    </h3>
+                    <p className="text-sm text-muted-foreground md:text-base">
+                      Horizo cam kết bảo mật mọi thông tin của khách hàng, từ ý
+                      tưởng đến dữ liệu, đảm bảo tính bảo mật và riêng tư tuyệt
+                      đối trong quá trình hợp tác
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+      </div>
 
       {/* PROCESS SECTION */}
       <div id="process" className="md:flex gap-5 w-[80%] mx-auto py-12">
@@ -770,69 +776,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* GUARANTEE SECTION */}
-      {/* <div className="md:flex gap-5 w-[80%] mx-auto py-20">
-        <div className="md:w-[40%] mb-10 md:mb-0">
-          <div className="size-full max-w-lg items-center justify-center overflow-hidden">
-            <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-              <p className="text-[3.5rem] font-semibold">Guarantees</p>
-            </BoxReveal>
-
-            <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-              <h2 className="mt-[.5rem] text-[1rem]">
-                Horizo luôn nỗ lực và cam kết tạo ra các sản phẩm có “trách
-                nhiệm” & “xứng đáng” với những gì bạn mong đợi.
-              </h2>
-            </BoxReveal>
-          </div>
-        </div>
-
-        <div className="md:w-[60%]">
-          <Accordion type="single" collapsible>
-            <AccordionItem value="item-1">
-              <AccordionTrigger>Chất lượng hàng đầu</AccordionTrigger>
-              <AccordionContent>
-                Cam kết mang đến giải pháp về website chất lượng cao, đảm bảo
-                giao diện phù hợp, tối ưu hóa trải nghiệm người dùng.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2">
-              <AccordionTrigger>Chính trực trong hợp tác</AccordionTrigger>
-              <AccordionContent>
-                Sự chính trực khi tư vấn và hợp tác luôn là kim chỉ nam của
-                Horizo từ ngày đầu thành lập để cùng tạo nên kết quả WIN-WIN.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3">
-              <AccordionTrigger>Tiến độ đúng hẹn</AccordionTrigger>
-              <AccordionContent>
-                Làm việc theo lịch trình cụ thể và rõ ràng, luôn đảm bảo hoàn
-                thành dự án đúng thời hạn đã cam kết với khách hàng.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4">
-              <AccordionTrigger>Tư vấn và hỗ trợ tận tâm</AccordionTrigger>
-              <AccordionContent>
-                Luôn sẵn sàng hỗ trợ và tư vấn khách hàng từ bước lên ý tưởng
-                đến khi vận hành. Giải đáp các thắc mắc và bảo trì.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5">
-              <AccordionTrigger>Bảo mật thông tin tuyệt đối</AccordionTrigger>
-              <AccordionContent>
-                Horizo cam kết bảo mật mọi thông tin của khách hàng, từ ý tưởng
-                đến dữ liệu, đảm bảo tính bảo mật và riêng tư tuyệt đối trong
-                quá trình hợp tác
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </div> */}
-
       {/* FOOTER */}
       <footer className="bg-white dark:bg-black mt-12">
         <div className="container px-6 py-8 mx-auto">
@@ -852,13 +795,6 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
-              <a
-                href=""
-                target="_blank"
-                className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40"
-              >
-                <span className="mx-1">Contact Us</span>
-              </a>
               <a
                 href="https://www.behance.net/horizomarketing"
                 target="_blank"
