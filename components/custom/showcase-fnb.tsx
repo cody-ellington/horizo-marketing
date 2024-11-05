@@ -56,6 +56,13 @@ const works = [
     subTitle: "An eye-catching theme optimized for shopping on the go.",
     link: "https://themes.shopify.com/themes/crave/styles/default/preview",
   },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/project/shopify8.webp",
+    title: "Shapes",
+    subTitle: "Move products fast with clever Shapes.",
+    link: "https://themes.shopify.com/themes/shapes/styles/bold/preview",
+  },
 ];
 
 export function ProjectShowcaseFnB() {

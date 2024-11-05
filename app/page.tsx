@@ -331,15 +331,15 @@ export default function Home() {
         />
       </div> */}
 
-      <NeonGradientCard className="flex flex-col place-items-center w-[80%] h-fit mx-auto items-center justify-center text-center bg-[url('/images/space.avif')]">
+      <NeonGradientCard className="flex flex-col place-items-center w-[80%] h-fit mx-auto items-center justify-center text-center bg-[url('/images/galay.jpg')]">
         <ShineBorder
-          className="relative flex h-[70vh] md:h-[400px] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg border bg-[url('/images/space.avif')] bg-cover md:shadow-xl"
+          className="relative flex h-[70vh] md:h-[400px] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg border bg-[url('/images/galay.jpg')] bg-cover md:shadow-xl"
           color={["#3b3b3b", "#1c1b1b", "#170b03"]}
         >
           <span className="pointer-events-none py-2 whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-3xl md:text-5xl font-semibold leading-none text-transparent dark:from-[#fece8f] dark:to-[#00d9ff00]">
             OUR STORY
           </span>
-          <span className="text-center text-sm dark:text-white/70 w-[80%] md:w-[45%] mt-3">
+          <span className="text-center text-sm dark:text-white/70 w-[80%] md:w-[48%] mt-3">
             Horizo được lấy cảm hứng từ “Horizon” (đường chân trời). Đường chân
             trời luôn di chuyển khi ta tiến lên và dù đi xa đến đâu, ta vẫn luôn
             có thể tiến xa hơn, tìm kiếm những ‘chân trời” mới cho riêng mình.
@@ -372,7 +372,7 @@ export default function Home() {
       </ShineBorder> */}
 
       {/* CORE VALUES SECTION */}
-      <div
+      {/* <div
         className={
           "flex h-[300px] md:h-fit w-[80%] mx-auto flex-col gap-6 lg:h-[250px] lg:flex-row my-10"
         }
@@ -401,7 +401,7 @@ export default function Home() {
             XỨNG ĐÁNG
           </span>
         </MagicCard>
-      </div>
+      </div> */}
 
       {/* TESTIMONIAL */}
       <div className="relative flex h-[400px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
@@ -782,29 +782,38 @@ export default function Home() {
       {/* CONTACT SECTION */}
       <section className="w-[80%] mx-auto pt-32 pb-16">
         <div className="container relative">
-          <div className="pointer-events-none absolute inset-0 -top-20 -z-10 mx-auto hidden size-[500px] bg-[radial-gradient(hsl(var(--muted-foreground))_1px,transparent_1px)] opacity-25 [background-size:6px_6px] [mask-image:radial-gradient(circle_at_center,white_250px,transparent_250px)] lg:block"></div>
+          <div className="pointer-events-none absolute inset-0 -top-20 -z-10 mx-auto hidden size-[350px] bg-[radial-gradient(hsl(var(--muted-foreground))_1px,transparent_1px)] opacity-25 [background-size:6px_6px] [mask-image:radial-gradient(circle_at_center,white_250px,transparent_250px)] lg:block"></div>
           <div className="relative md:flex justify-between gap-16">
             <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-t from-background via-transparent to-transparent lg:block"></div>
 
             <div className="w-full max-w-96 shrink-0 justify-between">
-              <p className="font-mono text-xs text-muted-foreground">
+              {/* <p className="font-mono text-xs text-muted-foreground">
                 Bạn đã có idea của mình?
-              </p>
-              <h2 className="mb-3 mt-6 text-3xl font-medium lg:text-4xl">
+              </p> */}
+              <h2 className="mb-3 mt-6 text-3xl font-medium lg:text-5xl">
                 Liên hệ với chúng tôi
               </h2>
-              <p className="text-sm text-muted-foreground mb-10">
-                Hoặc bạn chưa có ý tưởng? Đừng lo, chúng tôi sẽ cùng bạn xây
-                dụng và hiện thực hoá chúng 😊
+              <p className="text-sm text-muted-foreground mb-10 text-justify leading-loose">
+                Dù bạn chưa có ý tưởng cụ thể, đừng lo lắng! Chúng tôi luôn sẵn
+                sàng đồng hành cùng bạn để xây dựng và phát triển những ý tưởng
+                từ cơ bản nhất. Cùng nhau, chúng ta sẽ tạo ra những giải pháp
+                sáng tạo, tối ưu và biến những ý tưởng đó thành hiện thực một
+                cách dễ dàng và hiệu quả. Bạn chỉ cần có niềm tin, chúng tôi sẽ
+                giúp bạn đi từng bước để biến giấc mơ của mình thành sự thật. 😊
               </p>
             </div>
             <div className="w-full max-w-3xl shrink-0">
-              <iframe
+              <img
+                src="/images/space.png"
+                alt="map-decor"
+                className="max-h-[450px w-full min-w-[450px] max-w-3xl rounded-lg border object-cover"
+              ></img>
+              {/* <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d244.93598580620198!2d106.7847731!3d10.8131658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x20905a0d2ce93357%3A0xddcfea65efcbb35e!2sHorizo%20Marketing%20Agency!5e0!3m2!1sen!2s!4v1730787602662!5m2!1sen!2s"
                 width="100%"
-                height="450"
+                height="350"
                 loading="lazy"
-              ></iframe>
+              ></iframe> */}
             </div>
           </div>
           <div className="relative mt-8 grid md:grid-cols-3">
