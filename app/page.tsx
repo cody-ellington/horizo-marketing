@@ -871,7 +871,7 @@ export default function Home() {
           <div className="flex flex-col items-center text-center">
             <a href="#">
               <Image
-                className="w-auto h-18"
+                className="w-auto h-32"
                 src={logoUrl}
                 width={1000}
                 height={1000}
