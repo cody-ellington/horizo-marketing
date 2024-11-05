@@ -822,7 +822,6 @@ export default function Home() {
                 <h3 className="text-lg font-medium">
                   Qua các kênh truyền thông
                 </h3>
-                <p className="mt-1 text-sm text-muted-foreground">
                   <div className="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
                     <a
                       href="https://www.behance.net/horizomarketing"
@@ -839,7 +838,6 @@ export default function Home() {
                       <span className="mx-1">Facebook</span>
                     </a>
                   </div>
-                </p>
               </div>
             </div>
             <div className="flex flex-col gap-y-6 px-2 py-10 md:p-6 lg:p-8 text-center">
