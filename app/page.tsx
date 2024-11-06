@@ -416,17 +416,12 @@ export default function Home() {
           ))}
         </Marquee>
         <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-        <div
-          id="service"
-          className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"
-        ></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+        <div id="service"></div>
       </div>
 
       {/* SERVICES SECTION */}
-      <div
-        id="service"
-        className="relative flex h-fit w-full flex-col overflow-hidden rounded-lg bg-background md:shadow-xl"
-      >
+      <div className="relative flex h-fit w-full flex-col overflow-hidden rounded-lg bg-background md:shadow-xl">
         <div className="text-center mt-10">
           <SparklesText text="Our Service" />
         </div>
@@ -458,7 +453,7 @@ export default function Home() {
                   Thiết kế giao diện website UX UI
                 </p>
                 <p className="text-gray-500 dark:text-gray-200">
-                  Tối ưu hóa danh mục sản phẩm
+                  Thiết kế Shopify
                 </p>
                 <p className="text-gray-500 dark:text-gray-200">
                   Thiết lập tính năng giỏ hàng và thanh toán
@@ -491,7 +486,7 @@ export default function Home() {
                   Thiết kế giao diện website UX UI
                 </p>
                 <p className="text-gray-500 dark:text-gray-200">
-                  Thiết kế Landing Page
+                  Thiết kế Webflow, Landing Page
                 </p>
                 <p className="text-gray-500 dark:text-gray-200">
                   Hệ thống quản lý liên hệ và thông tin
@@ -782,39 +777,30 @@ export default function Home() {
       {/* CONTACT SECTION */}
       <section className="w-[80%] mx-auto pt-32 pb-16">
         <div className="container relative">
-          <div className="pointer-events-none absolute inset-0 -top-20 -z-10 mx-auto hidden size-[350px] bg-[radial-gradient(hsl(var(--muted-foreground))_1px,transparent_1px)] opacity-25 [background-size:6px_6px] [mask-image:radial-gradient(circle_at_center,white_250px,transparent_250px)] lg:block"></div>
+          {/* <div className="pointer-events-none absolute inset-0 -top-20 -z-10 mx-auto hidden size-[350px] bg-[radial-gradient(hsl(var(--muted-foreground))_1px,transparent_1px)] opacity-25 [background-size:6px_6px] [mask-image:radial-gradient(circle_at_center,white_250px,transparent_250px)] lg:block"></div> */}
           <div className="relative md:flex justify-between gap-16">
-            <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-t from-background via-transparent to-transparent lg:block"></div>
+            <div className="pointer-events-none absolute inset-0 hidden lg:block"></div>
 
-            <div className="w-full max-w-96 shrink-0 justify-between">
+            <div className="w-full shrink-0 justify-between text-center">
               {/* <p className="font-mono text-xs text-muted-foreground">
                 Bạn đã có idea của mình?
               </p> */}
-              <h2 className="mb-3 mt-6 text-3xl font-medium lg:text-5xl">
+              <h2 className="mb-3 mt-1 text-3xl font-medium lg:text-5xl">
                 Liên hệ với chúng tôi
               </h2>
-              <p className="text-sm text-muted-foreground mb-10 text-justify leading-loose">
+              {/* <p className="text-sm text-muted-foreground mb-2 text-center leading-loose">
                 Dù bạn chưa có ý tưởng cụ thể, đừng lo lắng! Chúng tôi luôn sẵn
                 sàng đồng hành cùng bạn để xây dựng và phát triển những ý tưởng
-                từ cơ bản nhất. Cùng nhau, chúng ta sẽ tạo ra những giải pháp
-                sáng tạo, tối ưu và biến những ý tưởng đó thành hiện thực một
-                cách dễ dàng và hiệu quả. Bạn chỉ cần có niềm tin, chúng tôi sẽ
-                giúp bạn đi từng bước để biến giấc mơ của mình thành sự thật. 😊
-              </p>
+                từ cơ bản nhất.
+              </p> */}
             </div>
-            <div className="w-full max-w-3xl shrink-0">
+            {/* <div className="w-full max-w-3xl shrink-0">
               <img
                 src="/images/space.png"
                 alt="map-decor"
                 className="max-h-[450px w-full min-w-[450px] max-w-3xl rounded-lg border object-cover"
               ></img>
-              {/* <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d244.93598580620198!2d106.7847731!3d10.8131658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x20905a0d2ce93357%3A0xddcfea65efcbb35e!2sHorizo%20Marketing%20Agency!5e0!3m2!1sen!2s!4v1730787602662!5m2!1sen!2s"
-                width="100%"
-                height="350"
-                loading="lazy"
-              ></iframe> */}
-            </div>
+            </div> */}
           </div>
           <div className="relative mt-8 grid md:grid-cols-3">
             <div className="flex flex-col gap-y-6 px-2 py-10 md:p-6 lg:p-8 text-center">
@@ -822,22 +808,22 @@ export default function Home() {
                 <h3 className="text-lg font-medium">
                   Qua các kênh truyền thông
                 </h3>
-                  <div className="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
-                    <a
-                      href="https://www.behance.net/horizomarketing"
-                      target="_blank"
-                      className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40"
-                    >
-                      <span className="mx-1">Behance</span>
-                    </a>
-                    <a
-                      href="https://www.facebook.com/horizo.marketing"
-                      target="_blank"
-                      className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40"
-                    >
-                      <span className="mx-1">Facebook</span>
-                    </a>
-                  </div>
+                <div className="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
+                  <a
+                    href="https://www.behance.net/horizomarketing"
+                    target="_blank"
+                    className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40"
+                  >
+                    <span className="mx-1">Behance</span>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/horizo.marketing"
+                    target="_blank"
+                    className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40"
+                  >
+                    <span className="mx-1">Facebook</span>
+                  </a>
+                </div>
               </div>
             </div>
             <div className="flex flex-col gap-y-6 px-2 py-10 md:p-6 lg:p-8 text-center">
